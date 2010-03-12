@@ -1,12 +1,15 @@
 # Edit this Gemfile to bundle your application's dependencies.
 source 'http://gemcutter.org'
 
-#require 'rubygems'
-#require 'mongo'
+require 'rubygems'
+require 'mongo'
 
 gem "rails", "3.0.0.beta"
 
-gem "mongo_mapper"
+#gem "mongo_mapper"
+gem "mongo_mapper-rails3", :require => "mongo_mapper"
+gem "rails3-generators"
+
 
 ## Bundle edge rails:
 # gem "rails", :git => "git://github.com/rails/rails.git"
