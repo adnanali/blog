@@ -4,7 +4,7 @@ class HomeController < ApplicationController
     options = {
             :status => "publish",
             :page => params[:page],
-            :per_page => 100,
+            :per_page => 10,
             :order => "publish_date DESC"
             }
     options[:categories] = params[:category] if (not params[:category].blank?)

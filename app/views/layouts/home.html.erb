@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+  <%# add post title here, or something %>
+  <title>jaadu hai</title>
+  <%= stylesheet_link_tag 'reset', 'style' %>
+  <!--
+  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.jaaduhai.com/blog/feed/" />
+  <link rel="alternate" type="text/xml" title="RSS .92" href="http://www.jaaduhai.com/blog/feed/rss/" />
+
+  <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="http://www.jaaduhai.com/blog/feed/atom/" />
+  -->
+  <link rel="openid.server" href="http://www.myopenid.com/server"/>
+  <link rel="openid.delegate" href="http://adnan.g.ali.myopenid.com"/>
+
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+
+  <%# TODO: get this player %>
+  <script language="javascript1.4" type="text/javascript" src="http://www.jaaduhai.com/blog/wp-content/plugins/audio-player/audio-player.js"></script>
+</head>
+
+<body>
+<p class="notice"><%= notice %></p>
+
+<div id="header">
+  <div id="logo-small">&nbsp;
+    <!--<ul>
+      <li><a class="blue" href="index.php"><strong class="blue">W</strong>ords</a></li>
+      <li><a class="green" href="index.php"><strong class="green">P</strong>hotos</a></li>
+    </ul>-->
+  </div>
+
+  <div id="logo"><a href="<%= root_url %>" title="jaadu hai">
+    <h1>jaadu hai</h1><br/>
+
+    <h2>tumhare nazroon mein jaadu hai</h2></a></div>
+  <br class="clear"/>
+
+  <div id="tagline">
+    the mind dump and musings of one <a href="/blog/about/">adnan.ali</a>
+  </div>
+
+  <br class="clear"/>&nbsp;
+</div>
+
+<div id="content">
+  <%= yield %>
+</div>
+
+<div class="grey" id="footer">
+  <div class="copyleft">@ copyleft 2002-2008. All Wrongs Reserved. All Puns Intended. Anything on the blog that is mine
+    may be used, modified, or redistributed without any express written consent or attribution or whatever. We can't
+    assume that it will, but especially if it will make someone smile. Everything else is owned by whoever owns it.
+  </div>
+</div>
+
+</body>
+</html>
+

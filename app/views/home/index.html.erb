@@ -1,22 +1,51 @@
-<h1>Hello Rails!</h1>
-
 <% @posts.each do |post| %>
+  <div class="entry">
   <div class="title">
     <h2><%= link_to post.title, post, :rel => "bookmark", :title => post.title %></h2>
   </div>
-  <div class="date">
-    <h3>
-      <%= post.publish_date %>
-    </h3>
-    Categories:<br/>&nbsp;&nbsp;
-    <% post.categories.each do |category| %>
-      <%= category %>
-    <% end %>
-    <br/>
+  <div class="meta">
+    <div class="date">
+      <h3>
+        <%
+           Time.zone = 'Eastern Time (US & Canada)'
+           date = post.publish_date
+         %>
+        <%= date.strftime("#{date.day.ordinalize} %B %Y") %>
+      </h3>
+      Categories:<br/>&nbsp;&nbsp;
+      <% post.categories.each do |category| %>
+        <%= category %>
+      <% end %>
+      <br/>
+    </div>
   </div>
   <div class="content">
     <div class="post">
       <%= raw markdown gfm post.content[:body] %>
     </div>
   </div>
+  <br class="clear" />
+    </div>
 <% end %>
+
+<!--<div class="title">-->
+  <!--<h2><a href="http://www.jaaduhai.com/blog/2010/03/06/1974/" rel="bookmark" title="Permanent Link to "></a></h2></div>-->
+<!--<div class="meta"/>-->
+<!--<div class="date"><h3><a href="http://www.jaaduhai.com/blog/2010/#Mar6th" title="6th">6th</a>-->
+  <!--<a href="http://www.jaaduhai.com/blog/2010/#Mar" title="March">March</a>-->
+  <!--<a href="http://www.jaaduhai.com/blog/2010/" title="2010">2010</a></h3>-->
+  <!--Categories:<br/>&nbsp;&nbsp;<a class="category" href="http://www.jaaduhai.com/blog/categories/line/" title="line">line</a><br/>-->
+<!--</div><br/><p>-->
+  <!--<a class="post-edit-link" href="http://www.jaaduhai.com/blog/wp-admin/post.php?action=edit&amp;post=1974" title="Edit post">Edit</a>-->
+<!--</p></div>-->
+<!--<div class="content">-->
+  <!--<div class="post">-->
+    <!--<p>First impressions matter more for some than they do for others. Sometimes it takes a try or two or twenty.</p>-->
+
+  <!--</div>-->
+  <!--<div class="comment-link">-->
+    <!--<span class="entry-comments"><a href="http://www.jaaduhai.com/blog/2010/03/06/1974/#comments" title="Comment on ">Comments-->
+      <!--(1)</a></span>-->
+  <!--</div>-->
+<!--</div><br class="clear"/>-->
+

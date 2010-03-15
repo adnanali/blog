@@ -35,7 +35,7 @@ ol li						{ list-style-type: decimal;list-style-position:inside; }
 img, div					{ behavior: url(wp-content/themes/ifany/iepngfix.htc); }
 b, strong					{ font-weight:bold; }
 em							{ font-style:italic; }
-blockquote					{ font-style:italic; margin-left:2em; padding-left:0.5em; border-left: 5px solid #DDD; }
+blockquote					{ font-style:italic; margin-left:2em; margin-bottom: 1em; padding-left:0.5em; border-left: 5px solid #DDD; }
 
 /* Wordpress stuff */
 img.centered 				{ display: block; margin-left: auto; margin-right: auto; }
@@ -65,14 +65,14 @@ img.alignleft 				{ margin: 0 7px 2px 0; display: inline; }
 #cat						{ margin-top:-14px; }
 
 /* Title */
-div.title					{ margin:1em 0 1em 360px;width:500px;font-size:160%;font-family: 'URW Palladio L', Georgia, times, serif;letter-spacing:+0.05em;}
+div.title					{ margin:1em 0 1em 360px;width:600px;font-size:160%;font-family: 'URW Palladio L', Georgia, times, serif;letter-spacing:+0.05em;}
 div.title strong			{ font-size:200%; font-weight:normal;color:#767676; }
 div.title a:link			{ color: #767676;text-decoration:none }
 div.title a:visited			{ color: #767676;text-decoration:none }
 div.title a:hover			{ color: #767676; }
 
 /* Meta field */
-div.meta					{ width:240px;margin:3px 3px 7em 120px;position:relative;float:left;color:#767676;text-align:left;display:inline; }
+div.meta					{ width:240px;margin:3px 3px 4em 120px;position:relative;float:left;color:#767676;text-align:left;display:inline; }
 div.meta h3					{ font-size:120%; font-weight:normal;margin-bottom:0.5em;margin-top:-0.15em; }
 div.meta a.category:link 		{ color:#4DB0CF;text-decoration:none; }
 div.meta a.category:visited		{ color:#4DB0CF;text-decoration:none; }
@@ -82,7 +82,7 @@ div.meta a:visited			{ color:#767676;text-decoration:none; }
 div.meta a:hover 			{ color:#4DB0CF; }
 
 /* Content */
-div.content					{ width:600px;position:relative;float:left;text-align:justify;line-height:1.5;margin-bottom:5em;font-size:110%;}
+div.content					{ width:600px;position:relative;float:left;text-align:justify;line-height:1.5;margin-bottom:4em;font-size:110%;}
 div.post {font-size: 100%;}
 div.content img				{ border-width:1px;border-color:#444;border-style:solid;padding:2px;background-color:#eee;margin-bottom:1em; }
 div.author					{ text-align:right;font-size:80%; }
