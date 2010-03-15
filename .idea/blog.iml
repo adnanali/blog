@@ -12,7 +12,19 @@
   <component name="GemRequirementsHolder" version="2">
     <requirement>
       <requirement>
+        <dependency name="bluecloth" version="0" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="mongo_mapper" version="0" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="nokogiri" version="0" bound="GREATER_OR_EQUAL" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
