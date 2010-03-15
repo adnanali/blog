@@ -6,9 +6,11 @@ require 'mongo'
 
 gem "rails", "3.0.0.beta"
 
-#gem "mongo_mapper"
-gem "mongo_mapper-rails3", :require => "mongo_mapper"
+gem "mongo_mapper"
+#gem "mongo_mapper-rails3", :require => "mongo_mapper"
 gem "rails3-generators"
+gem "nokogiri"
+gem "bluecloth"
 
 
 ## Bundle edge rails:

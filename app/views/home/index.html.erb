@@ -1,1 +1,22 @@
 <h1>Hello Rails!</h1>
+
+<% @posts.each do |post| %>
+  <div class="title">
+    <h2><%= link_to post.title, post, :rel => "bookmark", :title => post.title %></h2>
+  </div>
+  <div class="date">
+    <h3>
+      <%= post.publish_date %>
+    </h3>
+    Categories:<br/>&nbsp;&nbsp;
+    <% post.categories.each do |category| %>
+      <%= category %>
+    <% end %>
+    <br/>
+  </div>
+  <div class="content">
+    <div class="post">
+      <%= raw markdown gfm post.content[:body] %>
+    </div>
+  </div>
+<% end %>

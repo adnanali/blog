@@ -1,0 +1,56 @@
+#!/usr/bin/env ruby
+# This command will automatically be run when you run "rails" with Rails 3 gems installed from the root of your application.
+
+ENV_PATH  = File.expand_path('../../config/environment',  __FILE__)
+BOOT_PATH = File.expand_path('../../config/boot',  __FILE__)
+APP_PATH  = File.expand_path('../../config/application',  __FILE__)
+ROOT_PATH = File.expand_path('../..',  __FILE__)
+
+require BOOT_PATH
+require ENV_PATH
+require APP_PATH
+
+file = ROOT_PATH + "/wordpress.2010-03-13.xml" 
+
+puts file
+
+f = File.open(file)
+doc = Nokogiri::XML(f)
+f.close
+
+channel = doc.search("//wp:category")
+
+doc.css("wp|category").each { |x|
+  puts x.css("wp|category_nicename").text
+  puts x.css("wp|cat_name").text
+}
+
+doc.css("item").each { |item|
+  status = item.css("wp|status").text
+
+  post = Post.new
+
+  item.css("category").each {|cat|
+    cat_name = cat['nicename']
+    if (cat_name != nil)
+      status = "draft" if cat_name == "private"
+      post.categories << cat_name
+    end
+  }
+
+  post.title = item.css("title").text
+  post.slug = item.css("wp|post_name").text
+  post.post_type = item.css("wp|post_type").text
+  post.content[:body] = item.css("content|encoded").text
+  post.status = status
+  post.accept_comment = item.css("wp|comment_status").text == "open" ? "yes" : "no"
+  #puts item.css("wp|post_date").text
+  time = item.css("wp|post_date").text
+  if (time != "0000-00-00 00:00:00") 
+    post.publish_date = Time.parse(time)
+  end
+
+  #puts post.inspect
+  #
+  post.save
+}
