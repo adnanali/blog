@@ -1,0 +1,136 @@
+/*
+Theme Name: Minimalism Revisited
+Theme URI: http://www.ifany.org/theme
+Description: A slightly modified version of my minimalistic theme for <a href="http://www.ifany.org/2008/minimalism/">ifany.org</a>.
+Version: 1.1
+Author: Jonas Arnfred
+Author URI: http://www.ifany.org/
+Tags: minimalism, minimal, fixed width, one column, simple
+
+	If Any? v1.1
+	http://www.ifany.org/2008/theme
+
+	The theme is made by Jonas Arnfred on a friday
+	evening after a couple of beers and released as a
+	general wordpress theme on request.
+	
+	The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+	Please keep the link back to ifany.org in the footer
+
+*/
+
+/* Basic Stuff */
+html { background-color: #27221A;}
+body 						{ font-family: 'bitstream vera sans', trebuchet, 'Lucida Grande', Verdana, Arial, Sans-Serif; color: #dadada; background: #27221A url(wp-content/themes/ifany/images/bg.gif) repeat scroll 0 0}
+br.clear					{ clear:both; }
+a:link						{ color:#4DB0CF;}
+a:visited					{ color:#4DB0CF;}
+a:hover						{ text-decoration:underline; }
+div#content					{ border-bottom:1px #bbb solid; }
+p							{ margin-bottom:1em; }
+ul, ol						{ margin-left:1em; }
+ul li						{ list-style-type: disc;list-style-position:inside; }
+ol li						{ list-style-type: decimal;list-style-position:inside; }
+img, div					{ behavior: url(wp-content/themes/ifany/iepngfix.htc); }
+b, strong					{ font-weight:bold; }
+em							{ font-style:italic; }
+blockquote					{ font-style:italic; margin-left:2em; padding-left:0.5em; border-left: 5px solid #DDD; }
+
+/* Wordpress stuff */
+img.centered 				{ display: block; margin-left: auto; margin-right: auto; }
+img.alignright 				{ margin: 0 0 2px 7px; display: inline; }
+img.alignleft 				{ margin: 0 7px 2px 0; display: inline; }
+.alignright 				{ float: right;  text-align:right; }
+.alignleft 					{ float: left; text-align:left;  }
+.aligncenter 				{ display: block; margin-left: auto; margin-right: auto; }
+
+/* Header */
+#header						{ margin:10em 0 5em 0; }
+#header strong.blue			{ font-weight:normal;color:#4DB0CF; font-size:120%; }
+#header strong.green		{ font-weight:normal;color:#116740; font-size:120%; }
+#header div					{ position:relative;float:left; }
+#header h1					{ font-size:10em;font-family:'URW Palladio L', Georgia; }
+#header h2					{ font-size:1.2em;margin-top:-2.5em;margin-left:40px;margin-bottom:4em; }
+#header h3					{ font-size:6em;font-family:'URW Palladio L', Georgia; }
+#header a					{ color:#646464;text-decoration:none; }
+
+/* Archive Header */
+#logo-small					{ width:355px;margin:60px 3px 0 000px;display:inline;text-align:right; }
+#year						{ word-spacing:0.3em;font-weight:bold;text-align:left;color:#bababa; }
+#year a			 			{ color:#767676;text-decoration:none; }
+#year .my-year 			 			{ font-size: 200%; letter-spacing: 10px; }
+#year a:hover 				{ color:#4DB0CF; }
+#year p						{ margin-top:0px;margin-bottom:0;font-size:100%; }
+#cat						{ margin-top:-14px; }
+
+/* Title */
+div.title					{ margin:1em 0 1em 360px;width:500px;font-size:160%;font-family: 'URW Palladio L', Georgia, times, serif;letter-spacing:+0.05em;}
+div.title strong			{ font-size:200%; font-weight:normal;color:#767676; }
+div.title a:link			{ color: #767676;text-decoration:none }
+div.title a:visited			{ color: #767676;text-decoration:none }
+div.title a:hover			{ color: #767676; }
+
+/* Meta field */
+div.meta					{ width:240px;margin:3px 3px 7em 120px;position:relative;float:left;color:#767676;text-align:left;display:inline; }
+div.meta h3					{ font-size:120%; font-weight:normal;margin-bottom:0.5em;margin-top:-0.15em; }
+div.meta a.category:link 		{ color:#4DB0CF;text-decoration:none; }
+div.meta a.category:visited		{ color:#4DB0CF;text-decoration:none; }
+div.meta a.category:hover 		{ color:#4DB0CF;text-decoration:underline; }
+div.meta a:link	 			{ color:#767676;text-decoration:none; }
+div.meta a:visited			{ color:#767676;text-decoration:none; }
+div.meta a:hover 			{ color:#4DB0CF; }
+
+/* Content */
+div.content					{ width:600px;position:relative;float:left;text-align:justify;line-height:1.5;margin-bottom:5em;font-size:110%;}
+div.post {font-size: 100%;}
+div.content img				{ border-width:1px;border-color:#444;border-style:solid;padding:2px;background-color:#eee;margin-bottom:1em; }
+div.author					{ text-align:right;font-size:80%; }
+div.author a:link			{ color:#767676; }
+div.author a:visited		{ color:#767676; }
+div.author a:hover			{ color:#4DB0CF; }
+
+/* Comments */
+#commentBox					{ border-top:1px #bbb solid;margin-bottom:-1.25em; }
+#commentBox div.title		{ padding-bottom:0.5em;padding-top:3em; }
+#commentBox div.content		{ margin-bottom:5em; }
+#commentBox textarea		{ width:500px; margin-top: 1em;}
+#commentBox label			{ margin-left:1em; }
+#commentBox div.author		{ margin-top:1em; }
+#commentBox img.avatar			{ position:relative;float:left;margin:0 10px 10px 0; }
+
+#idc-container { margin: 0px auto !important; }
+
+textarea, input				{ border: 3px solid #767676; padding: 0.1em; }
+textarea:hover, input:hover	{ border-color: #af670b; }
+textarea:focus, input:focus	{ border-color: green; }
+
+/* PageNav */
+#pageNav					{ margin-left:360px;width:500px;margin-bottom:3em;font-size:80%;text-align:center; }
+#pageNav div.older			{ position:relative;float:left;width:100px;text-align:left;display:inline; }
+#pageNav div.category		{ position:relative;float:left;width:300px;text-align:center;display:inline; }
+#pageNav div.newer			{ position:relative;float:right;width:100px;text-align:right;display:inline; }
+
+/* Archive */
+div.month					{ font-size:450%;margin:0.3em 0 0.3em 220px;color:#999;text-decoration:none;display:inline; } 
+div.date div				{ position:relative;float:left;color:#999;margin-bottom:0.3em; }
+div.month strong				{ font-weight:normal; }
+div.date div.day			{ font-size:250%;margin-left:220px;text-align:right;width:100px;display:inline; }
+div.date div.th				{ font-size:130%;width:40px; }
+div.archive-title			{ font-size:120%;padding-top:0.5em; }
+div.archive-title a			{ color:#767676;text-decoration:none; }
+div.archive-title a:hover	{ color:#4DB0CF; }
+
+/* Footer */
+div.grey					{ } /* background-color:#f5f5f5; } */
+#footer	div					{ margin-left:60%;padding:3em 0 3em 0;text-align:right;font-size:80%;width:30%;color:#767676; }
+#footer a					{ color:#767676; text-decoration:none }
+#footer a:hover				{ color:#4DB0CF; }
+#footer div.copyleft { margin: auto; text-align: left; width: 80%;}
+.contributed-by {float: right; font-size:75%;}
+div#tagline {margin: -2em 27.5em 0; }
+
+.comment-link a:link, .comment-link a:visited { text-decoration: none; color: #767676; }
+.comment-link { text-align: right; text-transform: lowercase; font-size: 90%; }
+
+.wp-caption-text { font-size: 65%; }
