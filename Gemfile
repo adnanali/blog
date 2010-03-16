@@ -11,6 +11,7 @@ gem "mongo_mapper"
 gem "rails3-generators"
 gem "nokogiri"
 gem "bluecloth"
+gem "ruby-openid"
 
 
 ## Bundle edge rails:
