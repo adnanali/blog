@@ -10,7 +10,9 @@ require BOOT_PATH
 require ENV_PATH
 require APP_PATH
 
-file = ROOT_PATH + "/wordpress.2010-03-13.xml" 
+file = ROOT_PATH + "/db/wordpress.2010-03-15.xml" 
+
+Post.delete_all
 
 puts file
 
@@ -47,6 +49,10 @@ doc.css("item").each { |item|
   #puts item.css("wp|post_date").text
   time = item.css("wp|post_date").text
   if (time != "0000-00-00 00:00:00") 
+    post.created_at = Time.parse(time)
+  end
+  time = item.css("pubDate").text
+  if (time != "Thu, 01 Jan 1970 00:00:00 +0000") 
     post.publish_date = Time.parse(time)
   end
 
