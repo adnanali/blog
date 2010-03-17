@@ -9,7 +9,7 @@
       </h3>
       Categories:<br/>&nbsp;&nbsp;
       <% post.categories.each do |category| %>
-        <%= category %>
+        <%= link_to category, category_url(category) %>
       <% end %>
       <br/>
     </div>
@@ -18,11 +18,13 @@
     <div class="post">
       <%= raw markdown gfm post.content[:body] %>
     </div>
-    <div class="comment-link">
-    <span class="entry-comments">
-      <%= link_to "Comments (#{post.comment_count})", content_url(post.post_type, post.slug) + "/#comments" %>
-      </span>
-    </div>
+    <% if not params[:action] == "content" %>
+      <div class="comment-link">
+        <span class="entry-comments">
+          <%= link_to "Comments (#{post.comment_count})", content_url(post.post_type, post.slug) + "/#comments" %>
+        </span>
+      </div>
+    <% end %>
   </div>
   <br class="clear"/>
 </div>

@@ -1,16 +1,16 @@
 #!/usr/bin/env ruby
 # This command will automatically be run when you run "rails" with Rails 3 gems installed from the root of your application.
 
-ENV_PATH  = File.expand_path('../../config/environment',  __FILE__)
-BOOT_PATH = File.expand_path('../../config/boot',  __FILE__)
-APP_PATH  = File.expand_path('../../config/application',  __FILE__)
-ROOT_PATH = File.expand_path('../..',  __FILE__)
+ENV_PATH  = File.expand_path('../../config/environment', __FILE__)
+BOOT_PATH = File.expand_path('../../config/boot', __FILE__)
+APP_PATH  = File.expand_path('../../config/application', __FILE__)
+ROOT_PATH = File.expand_path('../..', __FILE__)
 
 require BOOT_PATH
 require ENV_PATH
 require APP_PATH
 
-file = ROOT_PATH + "/db/wordpress.2010-03-15.xml" 
+file = ROOT_PATH + "/db/wordpress.2010-03-17.xml"
 
 user = User.first(:name => "adnan.")
 
@@ -50,16 +50,16 @@ doc.css("item").each { |item|
   post.accept_comment = item.css("wp|comment_status").text == "open" ? "yes" : "no"
   #puts item.css("wp|post_date").text
   time = item.css("wp|post_date").text
-  if (time != "0000-00-00 00:00:00") 
+  if (time != "0000-00-00 00:00:00")
     post.created_at = Time.parse(time)
   end
   time = item.css("pubDate").text
-  if (time != "Thu, 01 Jan 1970 00:00:00 +0000") 
+  if (time != "Thu, 01 Jan 1970 00:00:00 +0000")
     post.publish_date = Time.parse(time)
   end
 
   post.user = user
-  
+
   #puts post.inspect
   #
   post.save
@@ -67,20 +67,22 @@ doc.css("item").each { |item|
   # process comments
   comment_count = 0
   item.css("wp|comment").each do |comment|
-    c = Comment.new
-    c.author = comment.css("wp|comment_author").text
-    c.email = comment.css("wp|comment_author_email").text
-    c.url = comment.css("wp|comment_author_url").text
-    c.ip = comment.css("wp|comment_author_IP").text
-    c.created_at = Time.parse(comment.css("wp|comment_date_gmt").text)
-    c.body = comment.css("wp|comment_content").text
-    if comment.css("wp|comment_approved").text == "1"
-      c.user = user
+    if (comment.css("wp|comment_type").text != "pingback")
+      c = Comment.new
+      c.author = comment.css("wp|comment_author").text
+      c.email = comment.css("wp|comment_author_email").text
+      c.url = comment.css("wp|comment_author_url").text
+      c.ip = comment.css("wp|comment_author_IP").text
+      c.created_at = Time.parse(comment.css("wp|comment_date_gmt").text)
+      c.body = comment.css("wp|comment_content").text
+      if comment.css("wp|comment_approved").text == "1"
+        c.user = user
+      end
+      c.post = post
+
+      c.save
+      comment_count += 1
     end
-    c.post = post
-    
-    c.save
-    comment_count += 1
   end
 
   post.comment_count = comment_count

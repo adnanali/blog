@@ -2,11 +2,11 @@ module ApplicationHelper
   def gfm(text)
     # Extract pre blocks
     extractions = {}
-    text.gsub!(%r{<pre>.*?</pre>}m) do |match|
-      md5 = Digest::MD5.hexdigest(match)
-      extractions[md5] = match
-      "{gfm-extraction-#{md5}}"
-    end
+#    text.gsub!(%r{<pre>.*?</pre>}m) do |match|
+#      md5 = Digest::MD5.hexdigest(match)
+#      extractions[md5] = match
+#      "{gfm-extraction-#{md5}}"
+#    end
    
     # prevent foo_bar_baz from ending up with an italic word in the middle
     text.gsub!(/(^(?! {4}|\t)\w+_\w+_\w[\w_]*)/) do |x|
@@ -19,9 +19,9 @@ module ApplicationHelper
     end
    
     # Insert pre block extractions
-    text.gsub!(/\{gfm-extraction-([0-9a-f]{32})\}/) do
-      "\n\n" + extractions[$1]
-    end
+#    text.gsub!(/\{gfm-extraction-([0-9a-f]{32})\}/) do
+#      "\n\n" + extractions[$1]
+#    end
    
     text
   end
