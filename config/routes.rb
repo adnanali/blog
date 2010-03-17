@@ -10,6 +10,7 @@ Blog::Application.routes.draw do |map|
   match '/logout' => 'sessions#destroy', :as => :logout
 
   root :to => "home#index"
+  match 'feed' => 'home#feed', :as => "feed", :format => "atom"
   match 'page/:page' => 'home#index', :page => /\d+/, :as => "page"
   match 'categories/:category(/page/:page)' => 'home#index', :page => /\d+/, :as => "category"
   match '/:post_type/:slug' => 'home#content', :as => "content"

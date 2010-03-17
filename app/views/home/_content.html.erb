@@ -7,9 +7,10 @@
       <h3>
         <%= post.publish_date.strftime("#{post.publish_date.day.ordinalize} %B %Y") %>
       </h3>
-      Categories:<br/>&nbsp;&nbsp;
+      Categories:<br/>
       <% post.categories.each do |category| %>
-        <%= link_to category, category_url(category) %>
+       &nbsp;&nbsp;<%= link_to category, category_url(category), :class => "category" %>
+        <br />
       <% end %>
       <br/>
     </div>

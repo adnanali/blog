@@ -8,9 +8,7 @@ class HomeController < ApplicationController
             :order => "publish_date DESC"
             }
     options[:categories] = params[:category] if (not params[:category].blank?)
-    options[:post_type] = params[:post_type] if (not params[:post_type].blank?)
-    options[:slug] = params[:slug] if (not params[:slug].blank?)
-
+    
     @posts = Post.paginate(options)
     #@posts = Post.all
   end
@@ -21,5 +19,17 @@ class HomeController < ApplicationController
   end
 
   def e404
+  end
+
+  def feed
+    options = {
+            :status => "publish",
+            :post_type => "post",
+            :page => 1,
+            :per_page => 10,
+            :order => "publish_date DESC"
+    }
+
+    @posts = Post.paginate(options)
   end
 end
