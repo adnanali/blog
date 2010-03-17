@@ -1,37 +1,24 @@
 <% @posts.each do |post| %>
-  <div class="entry">
-    <div class="title">
-      <h2><%= link_to post.title, post, :rel => "bookmark", :title => post.title %></h2>
-    </div>
-    <div class="meta">
-      <div class="date">
-        <h3>
-          <%
-             Time.zone = 'Eastern Time (US & Canada)'
-             date = post.publish_date
-          %>
-          <%= date.strftime("#{date.day.ordinalize} %B %Y") %>
-        </h3>
-        Categories:<br/>&nbsp;&nbsp;
-        <% post.categories.each do |category| %>
-          <%= category %>
-        <% end %>
-        <br/>
-      </div>
-    </div>
-    <div class="content">
-      <div class="post">
-        <%= raw markdown gfm post.content[:body] %>
-      </div>
-    </div>
-    <br class="clear"/>
-  </div>
+  <%= render :partial => 'content', :locals => { :post => post } %>
 <% end %>
 
 <div id="pageNav">
-  <div class="older"><%= link_to "< Older Entries", page_url(params[:page].to_i + 1) %></div>
-  <% if params[:page].to_i > 1 %>
-    <div class="newer"><%= link_to "Newer Entries >", page_url(params[:page].to_i - 1) %></div>
+  <%
+     prev_page = params[:page].to_i + 1
+     next_page = params[:page].to_i - 1
+     if params[:category]
+       prev_link = category_url(params[:category], prev_page)
+       next_link = category_url(params[:category], next_page)
+     else
+       prev_link = page_url(prev_page)
+       next_link = page_url(next_page)
+     end
+  %>
+  <% if @posts.total_pages >= prev_page %>
+    <div class="older"><%= link_to "< Older Entries", prev_link %></div>
+  <% end %>
+  <% if next_page != 0 %>
+    <div class="newer"><%= link_to "Newer Entries >", next_link %></div>
   <% end %>
 </div>
 

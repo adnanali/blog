@@ -3,6 +3,8 @@ require 'openid/extensions/sreg'
 require 'openid/extensions/pape'
 require 'openid/store/filesystem'
 class SessionsController < ApplicationController
+  layout "home"
+  
   def new
   end
 
@@ -53,7 +55,7 @@ class SessionsController < ApplicationController
     if params[:force_post]
       oidreq.return_to_args['force_post']='x'*2048
     end
-    return_to = complete_sessions_url
+    return_to = complete_session_url
     realm = root_url
 
     if oidreq.send_redirect?(realm, return_to, params[:immediate])
@@ -65,9 +67,17 @@ class SessionsController < ApplicationController
 
   def complete
     # FIXME - url_for some action is not necessarily the current URL.
-    current_url = complete_sessions_url
+    current_url = complete_session_url
+    logger.info "ADNAN!!!"
+    logger.info request.path_parameters.inspect
     logger.info params.inspect
-    parameters = params.reject{|k, v|request.path_parameters[k]}
+    logger.info "-----"
+    parameters = params.reject{|k, v|
+      logger.info "===#{k}===#{v}"
+      logger.info request.path_parameters.has_key?(k.to_sym)
+      request.path_parameters.has_key?(k.to_sym)
+    }
+    logger.info parameters.inspect
     oidresp = consumer.complete(parameters, current_url)
     case oidresp.status
       when OpenID::Consumer::FAILURE

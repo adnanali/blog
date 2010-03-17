@@ -1,4 +1,4 @@
-class Post
+class Comment
   include MongoMapper::Document 
 
   timestamps!
@@ -15,19 +15,17 @@ class Post
   # before_craete :your_model_method
   # after_create :your_model_method
   # before_upate :your_model_method
-  
-  key :user_id, ObjectId
-  key :title, String
-  key :slug, String
-  key :post_type, String, :default => "post"
-  key :content, Hash
-  key :status, String, :default => "draft"
-  key :accept_comment, String, :default => "yes"
-  key :publish_date, Time
-  key :tags, Array
-  key :categories, Array
-  key :comment_count, Integer
 
-  belongs_to :user
-  many :comments, :class_name => "Comment"
+  key :post_id, ObjectId
+  key :user_id, ObjectId
+  key :author, String
+  key :email, String
+  key :url, String
+  key :ip, String
+  key :approved, String
+  key :comment_user_id, String
+  key :body, String
+
+  belongs_to :post, :class_name => "Post"
+  belongs_to :user, :class_name => "User"
 end

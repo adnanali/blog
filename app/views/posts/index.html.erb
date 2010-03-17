@@ -4,6 +4,7 @@
   <tr>
     <th>Title</th>
     <th>Categories</th>
+    <th>Status</th>
     <th>Date Published</th>
     <th></th>
     <th></th>
@@ -13,6 +14,7 @@
   <tr>
     <td><%= link_to post.title.empty? ? "(empty)" : post.title, edit_post_path(post) %></td>
     <td><%= post.categories.inspect %></td>
+    <td><%= post.status %></td>
     <td><%= post.publish_date %></td>
     <td><%= link_to 'Show', post %></td>
     <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>

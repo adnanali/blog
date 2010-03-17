@@ -3,14 +3,16 @@ Blog::Application.routes.draw do |map|
   resources :users
 
   scope '/session' do
-    
-  end
-  resource :sessions do 
-    get :complete, :on => :collection
+    post '' => "sessions#create"
+    get '/complete' => "sessions#complete", :as => "complete_session"
   end
   match '/login' => 'sessions#new', :as => :login
   match '/logout' => 'sessions#destroy', :as => :logout
 
+  root :to => "home#index"
+  match 'page/:page' => 'home#index', :page => /\d+/, :as => "page"
+  match 'categories/:category(/page/:page)' => 'home#index', :page => /\d+/, :as => "category"
+  match '/:post_type/:slug' => 'home#content', :as => "content"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -61,8 +63,6 @@ Blog::Application.routes.draw do |map|
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "home#index"
-  match 'page/:page' => 'home#index', :as => "page"
 
   # See how all your routes lay out with "rake routes"
 

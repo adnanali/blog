@@ -12,6 +12,8 @@ require APP_PATH
 
 file = ROOT_PATH + "/db/wordpress.2010-03-15.xml" 
 
+user = User.first(:name => "adnan.")
+
 Post.delete_all
 
 puts file
@@ -56,7 +58,32 @@ doc.css("item").each { |item|
     post.publish_date = Time.parse(time)
   end
 
+  post.user = user
+  
   #puts post.inspect
   #
   post.save
+
+  # process comments
+  comment_count = 0
+  item.css("wp|comment").each do |comment|
+    c = Comment.new
+    c.author = comment.css("wp|comment_author").text
+    c.email = comment.css("wp|comment_author_email").text
+    c.url = comment.css("wp|comment_author_url").text
+    c.ip = comment.css("wp|comment_author_IP").text
+    c.created_at = Time.parse(comment.css("wp|comment_date_gmt").text)
+    c.body = comment.css("wp|comment_content").text
+    if comment.css("wp|comment_approved").text == "1"
+      c.user = user
+    end
+    c.post = post
+    
+    c.save
+    comment_count += 1
+  end
+
+  post.comment_count = comment_count
+  post.save
+
 }

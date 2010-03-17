@@ -1,0 +1,28 @@
+<div class="entry">
+  <div class="title">
+    <h2><%= link_to post.title, content_url(post.post_type, post.slug), :rel => "bookmark", :title => post.title %></h2>
+  </div>
+  <div class="meta">
+    <div class="date">
+      <h3>
+        <%= post.publish_date.strftime("#{post.publish_date.day.ordinalize} %B %Y") %>
+      </h3>
+      Categories:<br/>&nbsp;&nbsp;
+      <% post.categories.each do |category| %>
+        <%= category %>
+      <% end %>
+      <br/>
+    </div>
+  </div>
+  <div class="content">
+    <div class="post">
+      <%= raw markdown gfm post.content[:body] %>
+    </div>
+    <div class="comment-link">
+    <span class="entry-comments">
+      <%= link_to "Comments (#{post.comment_count})", content_url(post.post_type, post.slug) + "/#comments" %>
+      </span>
+    </div>
+  </div>
+  <br class="clear"/>
+</div>

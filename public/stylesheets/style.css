@@ -134,3 +134,16 @@ div#tagline {margin: -2em 27.5em 0; }
 .comment-link { text-align: right; text-transform: lowercase; font-size: 90%; }
 
 .wp-caption-text { font-size: 65%; }
+
+.page-message {
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  font-size: 3em;
+}
+
+.page-show {
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
