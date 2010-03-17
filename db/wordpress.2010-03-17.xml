@@ -15,7 +15,7 @@
 <!-- 6. WordPress will then import each of the posts, comments, and categories -->
 <!--    contained in this file into your blog -->
 
-<!-- generator="WordPress/2.9.1" created="2010-03-15 23:33"-->
+<!-- generator="WordPress/2.9.1" created="2010-03-17 07:22"-->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.0/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -28,7 +28,7 @@
 	<title>jaadu hai</title>
 	<link>http://www.jaaduhai.com/blog</link>
 	<description>tumhare nazroon mein jaadu hai</description>
-	<pubDate>Mon, 15 Mar 2010 23:14:16 +0000</pubDate>
+	<pubDate>Wed, 17 Mar 2010 07:14:14 +0000</pubDate>
 	<generator>http://wordpress.org/?v=2.9.1</generator>
 	<language>en</language>
 	<wp:wxr_version>1.0</wp:wxr_version>
@@ -49885,9 +49885,9 @@ unless they were going in opposite directions.]]></wp:comment_content>
 <pubDate>Fri, 05 Feb 2010 20:07:09 +0000</pubDate>
 <dc:creator><![CDATA[adnan.]]></dc:creator>
 
-		<category><![CDATA[general]]></category>
+		<category><![CDATA[music]]></category>
 
-		<category domain="category" nicename="general"><![CDATA[general]]></category>
+		<category domain="category" nicename="music"><![CDATA[music]]></category>
 
 <guid isPermaLink="false">http://www.jaaduhai.com/blog/?p=1850</guid>
 <description></description>
@@ -49915,10 +49915,18 @@ I wish that had been ingrained into me earlier. That life is nothing more but ou
 <wp:is_sticky>0</wp:is_sticky>
 <wp:postmeta>
 <wp:meta_key>_edit_lock</wp:meta_key>
-<wp:meta_value>1265426104</wp:meta_value>
+<wp:meta_value>1268810480</wp:meta_value>
 </wp:postmeta>
 <wp:postmeta>
 <wp:meta_key>_edit_last</wp:meta_key>
+<wp:meta_value>1</wp:meta_value>
+</wp:postmeta>
+<wp:postmeta>
+<wp:meta_key>_encloseme</wp:meta_key>
+<wp:meta_value>1</wp:meta_value>
+</wp:postmeta>
+<wp:postmeta>
+<wp:meta_key>_pingme</wp:meta_key>
 <wp:meta_value>1</wp:meta_value>
 </wp:postmeta>
 	</item>
@@ -52246,7 +52254,7 @@ Regarding supernatural signs, I personally don't think there are any at all.]]><
 
 <guid isPermaLink="false">http://www.jaaduhai.com/blog/?p=2014</guid>
 <description></description>
-<content:encoded><![CDATA[The start is always the hardest part. That is probably why they invented alarm clocks and coffee. The alarm clocks (that's right, clocks) get me out of bed but I maintain a zombie-like posture until I've had that first cup. It's a ritual, sparked by an electronic gadget that automatically conceives a cup of coffee every morning at the same time. Like clockwork.
+<content:encoded><![CDATA[The start is always the hardest part. That is probably why they invented alarm clocks and coffee. The alarm clocks get me out of bed but I maintain a zombie-like posture until I've had that first cup. It's a ritual, sparked by an electronic gadget that automatically conceives a cup of coffee every morning at the same time. Like clockwork.
 
 The second part is finding your way around. This isn't all that easy but it's assisted by the TTC. It's a powerfully liberating concept: the ability to get from any one corner of the city to another on a single ticket. Of course, this may require traversing multiple subway lines, rapid transit trains, street cars and buses, but it's possible. And it's a beautiful thing.
 
@@ -52300,7 +52308,7 @@ All of a sudden I wasn't missing that cup of coffee anymore, not so much.]]></co
 </wp:postmeta>
 <wp:postmeta>
 <wp:meta_key>_edit_lock</wp:meta_key>
-<wp:meta_value>1268493021</wp:meta_value>
+<wp:meta_value>1268758636</wp:meta_value>
 </wp:postmeta>
 <wp:comment>
 <wp:comment_id>18047</wp:comment_id>
@@ -52399,6 +52407,177 @@ Zackeria Zaheer]]></content:encoded>
 <wp:meta_key>_edit_last</wp:meta_key>
 <wp:meta_value>1</wp:meta_value>
 </wp:postmeta>
+	</item>
+<item>
+<title>love</title>
+<link>http://www.jaaduhai.com/blog/2010/03/15/love/</link>
+<pubDate>Tue, 16 Mar 2010 01:36:41 +0000</pubDate>
+<dc:creator><![CDATA[adnan.]]></dc:creator>
+
+		<category><![CDATA[lines]]></category>
+
+		<category domain="category" nicename="lines"><![CDATA[lines]]></category>
+
+<guid isPermaLink="false">http://www.jaaduhai.com/blog/?p=2022</guid>
+<description></description>
+<content:encoded><![CDATA[i just discovered that you are not the author
+of the love poem you sent me.]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>2022</wp:post_id>
+<wp:post_date>2010-03-15 20:36:41</wp:post_date>
+<wp:post_date_gmt>2010-03-16 01:36:41</wp:post_date_gmt>
+<wp:comment_status>open</wp:comment_status>
+<wp:ping_status>open</wp:ping_status>
+<wp:post_name>love</wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta>
+<wp:meta_key>_edit_lock</wp:meta_key>
+<wp:meta_value>1268703403</wp:meta_value>
+</wp:postmeta>
+<wp:postmeta>
+<wp:meta_key>_edit_last</wp:meta_key>
+<wp:meta_value>1</wp:meta_value>
+</wp:postmeta>
+	</item>
+<item>
+<title>reflection</title>
+<link>http://www.jaaduhai.com/blog/2010/03/15/reflection-2/</link>
+<pubDate>Tue, 16 Mar 2010 01:38:20 +0000</pubDate>
+<dc:creator><![CDATA[adnan.]]></dc:creator>
+
+		<category><![CDATA[lines]]></category>
+
+		<category domain="category" nicename="lines"><![CDATA[lines]]></category>
+
+<guid isPermaLink="false">http://www.jaaduhai.com/blog/?p=2024</guid>
+<description></description>
+<content:encoded><![CDATA[it’s a beautiful, cruel world.
+a work of art painted in the dark.
+then a light shines;
+it was a mirror all along.]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>2024</wp:post_id>
+<wp:post_date>2010-03-15 20:38:20</wp:post_date>
+<wp:post_date_gmt>2010-03-16 01:38:20</wp:post_date_gmt>
+<wp:comment_status>open</wp:comment_status>
+<wp:ping_status>open</wp:ping_status>
+<wp:post_name>reflection-2</wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta>
+<wp:meta_key>_edit_lock</wp:meta_key>
+<wp:meta_value>1268703503</wp:meta_value>
+</wp:postmeta>
+<wp:postmeta>
+<wp:meta_key>_edit_last</wp:meta_key>
+<wp:meta_value>1</wp:meta_value>
+</wp:postmeta>
+	</item>
+<item>
+<title>raasta</title>
+<link>http://www.jaaduhai.com/blog/2010/03/15/raasta/</link>
+<pubDate>Tue, 16 Mar 2010 01:39:42 +0000</pubDate>
+<dc:creator><![CDATA[adnan.]]></dc:creator>
+
+		<category><![CDATA[lines]]></category>
+
+		<category domain="category" nicename="lines"><![CDATA[lines]]></category>
+
+<guid isPermaLink="false">http://www.jaaduhai.com/blog/?p=2026</guid>
+<description></description>
+<content:encoded><![CDATA[khadmon pe khadam lo, meri jaan,
+aisa na ho ke koi raasta na ho.
+
+kisi haath ko thaam lo, meri jaan,
+aisa na ho ke koi raazdaan na ho.]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>2026</wp:post_id>
+<wp:post_date>2010-03-15 20:39:42</wp:post_date>
+<wp:post_date_gmt>2010-03-16 01:39:42</wp:post_date_gmt>
+<wp:comment_status>open</wp:comment_status>
+<wp:ping_status>open</wp:ping_status>
+<wp:post_name>raasta</wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta>
+<wp:meta_key>_edit_lock</wp:meta_key>
+<wp:meta_value>1268704425</wp:meta_value>
+</wp:postmeta>
+<wp:postmeta>
+<wp:meta_key>_edit_last</wp:meta_key>
+<wp:meta_value>1</wp:meta_value>
+</wp:postmeta>
+	</item>
+<item>
+<title>hazaaron khwaishein</title>
+<link>http://www.jaaduhai.com/blog/2010/03/15/hazaaron-khwaishein/</link>
+<pubDate>Tue, 16 Mar 2010 03:41:48 +0000</pubDate>
+<dc:creator><![CDATA[adnan.]]></dc:creator>
+
+		<category><![CDATA[music]]></category>
+
+		<category domain="category" nicename="music"><![CDATA[music]]></category>
+
+<guid isPermaLink="false">http://www.jaaduhai.com/blog/?p=2028</guid>
+<description></description>
+<content:encoded><![CDATA[<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/Irj8yvvi3Fg&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/Irj8yvvi3Fg&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
+<p>&nbsp;</p>
+<blockquote>
+mohabbat main nahin hai farq jeene aur marne ka
+usee ko dekh rar jeete hain jis kaafir pe dam nikle
+</blockquote>
+
+<a href="http://en.wikipedia.org/wiki/Shubha_Mudgal">Shubha Mudgal</a>'s voice is absolutely haunting as it plays in the background of the <a href="http://en.wikipedia.org/wiki/Hazaaron_Khwaishein_Aisi">film</a>. I love her voice.
+
+<a href="http://en.wikipedia.org/wiki/Jagjit_Singh_%28singer%29">Jagit</a>'s renditions can be found <a href="http://www.youtube.com/watch?v=Cjx3Hk8qYXY">here</a> and <a href="http://www.youtube.com/watch?v=d9hB7bK0rP0">here</a>.]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>2028</wp:post_id>
+<wp:post_date>2010-03-15 22:41:48</wp:post_date>
+<wp:post_date_gmt>2010-03-16 03:41:48</wp:post_date_gmt>
+<wp:comment_status>open</wp:comment_status>
+<wp:ping_status>open</wp:ping_status>
+<wp:post_name>hazaaron-khwaishein</wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta>
+<wp:meta_key>_edit_last</wp:meta_key>
+<wp:meta_value>1</wp:meta_value>
+</wp:postmeta>
+<wp:postmeta>
+<wp:meta_key>_edit_lock</wp:meta_key>
+<wp:meta_value>1268711680</wp:meta_value>
+</wp:postmeta>
+<wp:comment>
+<wp:comment_id>18051</wp:comment_id>
+<wp:comment_author><![CDATA[adnan.]]></wp:comment_author>
+<wp:comment_author_email>adnan@jaaduhai.com</wp:comment_author_email>
+<wp:comment_author_url>http://www.jaaduhai.com</wp:comment_author_url>
+<wp:comment_author_IP>99.232.172.131</wp:comment_author_IP>
+<wp:comment_date>2010-03-16 23:07:13</wp:comment_date>
+<wp:comment_date_gmt>2010-03-17 04:07:13</wp:comment_date_gmt>
+<wp:comment_content><![CDATA[the shubha mudgal version pretty much makes me cry.]]></wp:comment_content>
+<wp:comment_approved>1</wp:comment_approved>
+<wp:comment_type></wp:comment_type>
+<wp:comment_parent>0</wp:comment_parent>
+<wp:comment_user_id>1</wp:comment_user_id>
+</wp:comment>
 	</item>
 </channel>
 </rss>
