@@ -15,7 +15,7 @@
 <!-- 6. WordPress will then import each of the posts, comments, and categories -->
 <!--    contained in this file into your blog -->
 
-<!-- generator="WordPress/2.9.1" created="2010-03-17 07:22"-->
+<!-- generator="WordPress/2.9.1" created="2010-03-19 07:47"-->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.0/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -28,7 +28,7 @@
 	<title>jaadu hai</title>
 	<link>http://www.jaaduhai.com/blog</link>
 	<description>tumhare nazroon mein jaadu hai</description>
-	<pubDate>Wed, 17 Mar 2010 07:14:14 +0000</pubDate>
+	<pubDate>Thu, 18 Mar 2010 07:30:19 +0000</pubDate>
 	<generator>http://wordpress.org/?v=2.9.1</generator>
 	<language>en</language>
 	<wp:wxr_version>1.0</wp:wxr_version>
@@ -40,6 +40,7 @@
 	<wp:category><wp:category_nicename>design-of-things</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[design of things]]></wp:cat_name></wp:category>
 	<wp:category><wp:category_nicename>general</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[general]]></wp:cat_name></wp:category>
 	<wp:category><wp:category_nicename>ideaz</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[ideaz]]></wp:cat_name></wp:category>
+	<wp:category><wp:category_nicename>in-conversation</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[in conversation]]></wp:cat_name></wp:category>
 	<wp:category><wp:category_nicename>line</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[line]]></wp:cat_name></wp:category>
 	<wp:category><wp:category_nicename>lines</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[lines]]></wp:cat_name></wp:category>
 	<wp:category><wp:category_nicename>links</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[links]]></wp:cat_name></wp:category>
@@ -1637,6 +1638,37 @@ the third stanza.)]]></content:encoded>
 <wp:postmeta>
 <wp:meta_key>_edit_lock</wp:meta_key>
 <wp:meta_value>1265401319</wp:meta_value>
+</wp:postmeta>
+	</item>
+<item>
+<title>adverts</title>
+<link>http://www.jaaduhai.com/blog/?p=2050</link>
+<pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
+<dc:creator><![CDATA[adnan.]]></dc:creator>
+
+<guid isPermaLink="false">http://www.jaaduhai.com/blog/?p=2050</guid>
+<description></description>
+<content:encoded><![CDATA[]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>2050</wp:post_id>
+<wp:post_date>2010-03-18 02:30:17</wp:post_date>
+<wp:post_date_gmt>0000-00-00 00:00:00</wp:post_date_gmt>
+<wp:comment_status>open</wp:comment_status>
+<wp:ping_status>open</wp:ping_status>
+<wp:post_name></wp:post_name>
+<wp:status>draft</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta>
+<wp:meta_key>_edit_lock</wp:meta_key>
+<wp:meta_value>1268897419</wp:meta_value>
+</wp:postmeta>
+<wp:postmeta>
+<wp:meta_key>_edit_last</wp:meta_key>
+<wp:meta_value>1</wp:meta_value>
 </wp:postmeta>
 	</item>
 <item>
@@ -49915,18 +49947,10 @@ I wish that had been ingrained into me earlier. That life is nothing more but ou
 <wp:is_sticky>0</wp:is_sticky>
 <wp:postmeta>
 <wp:meta_key>_edit_lock</wp:meta_key>
-<wp:meta_value>1268810480</wp:meta_value>
+<wp:meta_value>1268886657</wp:meta_value>
 </wp:postmeta>
 <wp:postmeta>
 <wp:meta_key>_edit_last</wp:meta_key>
-<wp:meta_value>1</wp:meta_value>
-</wp:postmeta>
-<wp:postmeta>
-<wp:meta_key>_encloseme</wp:meta_key>
-<wp:meta_value>1</wp:meta_value>
-</wp:postmeta>
-<wp:postmeta>
-<wp:meta_key>_pingme</wp:meta_key>
 <wp:meta_value>1</wp:meta_value>
 </wp:postmeta>
 	</item>
@@ -52578,6 +52602,463 @@ usee ko dekh rar jeete hain jis kaafir pe dam nikle
 <wp:comment_parent>0</wp:comment_parent>
 <wp:comment_user_id>1</wp:comment_user_id>
 </wp:comment>
+	</item>
+<item>
+<title></title>
+<link>http://www.jaaduhai.com/blog/2010/03/17/2033/</link>
+<pubDate>Wed, 17 Mar 2010 13:28:41 +0000</pubDate>
+<dc:creator><![CDATA[adnan.]]></dc:creator>
+
+		<category><![CDATA[line]]></category>
+
+		<category domain="category" nicename="line"><![CDATA[line]]></category>
+
+<guid isPermaLink="false">http://www.jaaduhai.com/blog/2010/03/17/2033/</guid>
+<description></description>
+<content:encoded><![CDATA[Most people live and then die. But even that claim is under dispute.]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>2033</wp:post_id>
+<wp:post_date>2010-03-17 08:28:41</wp:post_date>
+<wp:post_date_gmt>2010-03-17 13:28:41</wp:post_date_gmt>
+<wp:comment_status>open</wp:comment_status>
+<wp:ping_status>open</wp:ping_status>
+<wp:post_name>2033</wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta>
+<wp:meta_key>_edit_lock</wp:meta_key>
+<wp:meta_value>1268832524</wp:meta_value>
+</wp:postmeta>
+<wp:postmeta>
+<wp:meta_key>_edit_last</wp:meta_key>
+<wp:meta_value>1</wp:meta_value>
+</wp:postmeta>
+	</item>
+<item>
+<title></title>
+<link>http://www.jaaduhai.com/blog/2010/03/17/2034/</link>
+<pubDate>Thu, 18 Mar 2010 00:28:43 +0000</pubDate>
+<dc:creator><![CDATA[adnan.]]></dc:creator>
+
+		<category><![CDATA[line]]></category>
+
+		<category domain="category" nicename="line"><![CDATA[line]]></category>
+
+<guid isPermaLink="false">http://www.jaaduhai.com/blog/?p=2034</guid>
+<description></description>
+<content:encoded><![CDATA[Don't let not knowing any better prevent you from doing any better.]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>2034</wp:post_id>
+<wp:post_date>2010-03-17 19:28:43</wp:post_date>
+<wp:post_date_gmt>2010-03-18 00:28:43</wp:post_date_gmt>
+<wp:comment_status>open</wp:comment_status>
+<wp:ping_status>open</wp:ping_status>
+<wp:post_name>2034</wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta>
+<wp:meta_key>_edit_lock</wp:meta_key>
+<wp:meta_value>1268880549</wp:meta_value>
+</wp:postmeta>
+<wp:postmeta>
+<wp:meta_key>_edit_last</wp:meta_key>
+<wp:meta_value>1</wp:meta_value>
+</wp:postmeta>
+	</item>
+<item>
+<title></title>
+<link>http://www.jaaduhai.com/blog/2010/03/17/2036/</link>
+<pubDate>Thu, 18 Mar 2010 02:50:18 +0000</pubDate>
+<dc:creator><![CDATA[adnan.]]></dc:creator>
+
+		<category><![CDATA[line]]></category>
+
+		<category domain="category" nicename="line"><![CDATA[line]]></category>
+
+<guid isPermaLink="false">http://www.jaaduhai.com/blog/2010/03/17/2036/</guid>
+<description></description>
+<content:encoded><![CDATA[You speak of growing up as if it were in the past.]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>2036</wp:post_id>
+<wp:post_date>2010-03-17 21:50:18</wp:post_date>
+<wp:post_date_gmt>2010-03-18 02:50:18</wp:post_date_gmt>
+<wp:comment_status>open</wp:comment_status>
+<wp:ping_status>open</wp:ping_status>
+<wp:post_name>2036</wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta>
+<wp:meta_key>_edit_lock</wp:meta_key>
+<wp:meta_value>1268880621</wp:meta_value>
+</wp:postmeta>
+<wp:postmeta>
+<wp:meta_key>_edit_last</wp:meta_key>
+<wp:meta_value>1</wp:meta_value>
+</wp:postmeta>
+<wp:comment>
+<wp:comment_id>18055</wp:comment_id>
+<wp:comment_author><![CDATA[sara]]></wp:comment_author>
+<wp:comment_author_email>sawrah.meer@gmail.com</wp:comment_author_email>
+<wp:comment_author_url>http://happysara.wordpress.com</wp:comment_author_url>
+<wp:comment_author_IP>174.91.15.84</wp:comment_author_IP>
+<wp:comment_date>2010-03-17 23:01:11</wp:comment_date>
+<wp:comment_date_gmt>2010-03-18 04:01:11</wp:comment_date_gmt>
+<wp:comment_content><![CDATA[written as if just for me.]]></wp:comment_content>
+<wp:comment_approved>1</wp:comment_approved>
+<wp:comment_type></wp:comment_type>
+<wp:comment_parent>0</wp:comment_parent>
+<wp:comment_user_id>0</wp:comment_user_id>
+</wp:comment>
+	</item>
+<item>
+<title></title>
+<link>http://www.jaaduhai.com/blog/2010/03/17/2037/</link>
+<pubDate>Thu, 18 Mar 2010 03:58:25 +0000</pubDate>
+<dc:creator><![CDATA[adnan.]]></dc:creator>
+
+		<category><![CDATA[in conversation]]></category>
+
+		<category domain="category" nicename="in-conversation"><![CDATA[in conversation]]></category>
+
+<guid isPermaLink="false">http://www.jaaduhai.com/blog/?p=2037</guid>
+<description></description>
+<content:encoded><![CDATA[<b>Me:</b> Wow, Lee, nice threads.
+<b>Lee:</b> I had this jacket made for me in Korea for thirty dollars.
+<b>Me:</b> Can I have it?
+<b>Lee:</b> No! It was made for me. It fits me perfectly.
+<b>Me:</b> You sure I can't have it?
+<b>Lee:</b> Yeah, you can't have it.
+<b>Me:</b> Well, doesn't hurt to ask, eh?
+<b>Lee:</b> No. Doesn't hurt to ask.
+<b>Me:</b> Actually, that's not true. You could possibly hurt or offend someone.
+<b>Lee:</b> Let's put this another way: if you don't ask you don't get.
+<b>Me:</b> You know there are other ways. If you don't steal you don't get. If you don't abduct you don't get. Asking isn't the only option.]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>2037</wp:post_id>
+<wp:post_date>2010-03-17 22:58:25</wp:post_date>
+<wp:post_date_gmt>2010-03-18 03:58:25</wp:post_date_gmt>
+<wp:comment_status>open</wp:comment_status>
+<wp:ping_status>open</wp:ping_status>
+<wp:post_name>2037</wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta>
+<wp:meta_key>_edit_lock</wp:meta_key>
+<wp:meta_value>1268884707</wp:meta_value>
+</wp:postmeta>
+<wp:postmeta>
+<wp:meta_key>_edit_last</wp:meta_key>
+<wp:meta_value>1</wp:meta_value>
+</wp:postmeta>
+<wp:comment>
+<wp:comment_id>18059</wp:comment_id>
+<wp:comment_author><![CDATA[hemlock]]></wp:comment_author>
+<wp:comment_author_email>saniya@gmail.com</wp:comment_author_email>
+<wp:comment_author_url>http://www.bohemianstate.com</wp:comment_author_url>
+<wp:comment_author_IP>86.96.229.85</wp:comment_author_IP>
+<wp:comment_date>2010-03-18 00:50:41</wp:comment_date>
+<wp:comment_date_gmt>2010-03-18 05:50:41</wp:comment_date_gmt>
+<wp:comment_content><![CDATA[actually, if you abduct/steal you get. with askin, you may or may not get.
+
+which option you choose depends on how much you want to get.]]></wp:comment_content>
+<wp:comment_approved>1</wp:comment_approved>
+<wp:comment_type></wp:comment_type>
+<wp:comment_parent>0</wp:comment_parent>
+<wp:comment_user_id>0</wp:comment_user_id>
+</wp:comment>
+	</item>
+<item>
+<title></title>
+<link>http://www.jaaduhai.com/blog/2010/03/17/2039/</link>
+<pubDate>Thu, 18 Mar 2010 04:09:39 +0000</pubDate>
+<dc:creator><![CDATA[adnan.]]></dc:creator>
+
+		<category><![CDATA[line]]></category>
+
+		<category domain="category" nicename="line"><![CDATA[line]]></category>
+
+<guid isPermaLink="false">http://www.jaaduhai.com/blog/?p=2039</guid>
+<description></description>
+<content:encoded><![CDATA[People use <a href="http://twitter.com/thisduck/status/10655772970">Twitter</a> to tell people that they said something.]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>2039</wp:post_id>
+<wp:post_date>2010-03-17 23:09:39</wp:post_date>
+<wp:post_date_gmt>2010-03-18 04:09:39</wp:post_date_gmt>
+<wp:comment_status>open</wp:comment_status>
+<wp:ping_status>open</wp:ping_status>
+<wp:post_name>2039</wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta>
+<wp:meta_key>_edit_lock</wp:meta_key>
+<wp:meta_value>1268887473</wp:meta_value>
+</wp:postmeta>
+<wp:postmeta>
+<wp:meta_key>_edit_last</wp:meta_key>
+<wp:meta_value>1</wp:meta_value>
+</wp:postmeta>
+	</item>
+<item>
+<title></title>
+<link>http://www.jaaduhai.com/blog/2010/03/17/2041/</link>
+<pubDate>Thu, 18 Mar 2010 04:26:00 +0000</pubDate>
+<dc:creator><![CDATA[adnan.]]></dc:creator>
+
+		<category><![CDATA[line]]></category>
+
+		<category domain="category" nicename="line"><![CDATA[line]]></category>
+
+<guid isPermaLink="false">http://www.jaaduhai.com/blog/2010/03/17/2041/</guid>
+<description></description>
+<content:encoded><![CDATA[I want to talk to someone about nothing in particular and then particularly about nothing.]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>2041</wp:post_id>
+<wp:post_date>2010-03-17 23:26:00</wp:post_date>
+<wp:post_date_gmt>2010-03-18 04:26:00</wp:post_date_gmt>
+<wp:comment_status>open</wp:comment_status>
+<wp:ping_status>open</wp:ping_status>
+<wp:post_name>2041</wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta>
+<wp:meta_key>_edit_lock</wp:meta_key>
+<wp:meta_value>1268886902</wp:meta_value>
+</wp:postmeta>
+<wp:postmeta>
+<wp:meta_key>_edit_last</wp:meta_key>
+<wp:meta_value>1</wp:meta_value>
+</wp:postmeta>
+	</item>
+<item>
+<title></title>
+<link>http://www.jaaduhai.com/blog/2010/03/18/2043/</link>
+<pubDate>Thu, 18 Mar 2010 05:02:57 +0000</pubDate>
+<dc:creator><![CDATA[adnan.]]></dc:creator>
+
+		<category><![CDATA[line]]></category>
+
+		<category domain="category" nicename="line"><![CDATA[line]]></category>
+
+<guid isPermaLink="false">http://www.jaaduhai.com/blog/2010/03/18/2043/</guid>
+<description></description>
+<content:encoded><![CDATA[Ideas are a dime a dozen and I'm out of dimes.]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>2043</wp:post_id>
+<wp:post_date>2010-03-18 00:02:57</wp:post_date>
+<wp:post_date_gmt>2010-03-18 05:02:57</wp:post_date_gmt>
+<wp:comment_status>open</wp:comment_status>
+<wp:ping_status>open</wp:ping_status>
+<wp:post_name>2043</wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta>
+<wp:meta_key>_edit_lock</wp:meta_key>
+<wp:meta_value>1268888579</wp:meta_value>
+</wp:postmeta>
+<wp:postmeta>
+<wp:meta_key>_edit_last</wp:meta_key>
+<wp:meta_value>1</wp:meta_value>
+</wp:postmeta>
+	</item>
+<item>
+<title></title>
+<link>http://www.jaaduhai.com/blog/2010/03/18/2044/</link>
+<pubDate>Thu, 18 Mar 2010 05:06:13 +0000</pubDate>
+<dc:creator><![CDATA[adnan.]]></dc:creator>
+
+		<category><![CDATA[line]]></category>
+
+		<category domain="category" nicename="line"><![CDATA[line]]></category>
+
+<guid isPermaLink="false">http://www.jaaduhai.com/blog/?p=2044</guid>
+<description></description>
+<content:encoded><![CDATA[Opinions are like ass-holes, everyone's got one. Some smellier than others.]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>2044</wp:post_id>
+<wp:post_date>2010-03-18 00:06:13</wp:post_date>
+<wp:post_date_gmt>2010-03-18 05:06:13</wp:post_date_gmt>
+<wp:comment_status>open</wp:comment_status>
+<wp:ping_status>open</wp:ping_status>
+<wp:post_name>2044</wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta>
+<wp:meta_key>_edit_lock</wp:meta_key>
+<wp:meta_value>1268889452</wp:meta_value>
+</wp:postmeta>
+<wp:postmeta>
+<wp:meta_key>_edit_last</wp:meta_key>
+<wp:meta_value>1</wp:meta_value>
+</wp:postmeta>
+	</item>
+<item>
+<title></title>
+<link>http://www.jaaduhai.com/blog/2010/03/18/2046/</link>
+<pubDate>Thu, 18 Mar 2010 05:13:36 +0000</pubDate>
+<dc:creator><![CDATA[adnan.]]></dc:creator>
+
+		<category><![CDATA[line]]></category>
+
+		<category domain="category" nicename="line"><![CDATA[line]]></category>
+
+<guid isPermaLink="false">http://www.jaaduhai.com/blog/2010/03/18/2046/</guid>
+<description></description>
+<content:encoded><![CDATA[What I don't like about sadness is that I feel it in my heart.]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>2046</wp:post_id>
+<wp:post_date>2010-03-18 00:13:36</wp:post_date>
+<wp:post_date_gmt>2010-03-18 05:13:36</wp:post_date_gmt>
+<wp:comment_status>open</wp:comment_status>
+<wp:ping_status>open</wp:ping_status>
+<wp:post_name>2046</wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta>
+<wp:meta_key>_edit_lock</wp:meta_key>
+<wp:meta_value>1268889400</wp:meta_value>
+</wp:postmeta>
+<wp:postmeta>
+<wp:meta_key>_edit_last</wp:meta_key>
+<wp:meta_value>1</wp:meta_value>
+</wp:postmeta>
+<wp:comment>
+<wp:comment_id>18058</wp:comment_id>
+<wp:comment_author><![CDATA[sara]]></wp:comment_author>
+<wp:comment_author_email>sawrah.meer@gmail.com</wp:comment_author_email>
+<wp:comment_author_url>http://happysara.wordpress.com</wp:comment_author_url>
+<wp:comment_author_IP>174.91.12.223</wp:comment_author_IP>
+<wp:comment_date>2010-03-18 00:37:38</wp:comment_date>
+<wp:comment_date_gmt>2010-03-18 05:37:38</wp:comment_date_gmt>
+<wp:comment_content><![CDATA[that's the best part.]]></wp:comment_content>
+<wp:comment_approved>1</wp:comment_approved>
+<wp:comment_type></wp:comment_type>
+<wp:comment_parent>0</wp:comment_parent>
+<wp:comment_user_id>0</wp:comment_user_id>
+</wp:comment>
+	</item>
+<item>
+<title></title>
+<link>http://www.jaaduhai.com/blog/2010/03/18/2049/</link>
+<pubDate>Thu, 18 Mar 2010 07:29:09 +0000</pubDate>
+<dc:creator><![CDATA[adnan.]]></dc:creator>
+
+		<category><![CDATA[in conversation]]></category>
+
+		<category domain="category" nicename="in-conversation"><![CDATA[in conversation]]></category>
+
+<guid isPermaLink="false">http://www.jaaduhai.com/blog/2010/03/18/2049/</guid>
+<description></description>
+<content:encoded><![CDATA[<strong>Me:</strong> You remember that time you fell down? And then you said, “I’m not hurt,” even though you were really hurt.
+<strong>Person:</strong> Yeah.
+<strong>Me:</strong> That’s why I don’t believe anything you say.]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>2049</wp:post_id>
+<wp:post_date>2010-03-18 02:29:09</wp:post_date>
+<wp:post_date_gmt>2010-03-18 07:29:09</wp:post_date_gmt>
+<wp:comment_status>open</wp:comment_status>
+<wp:ping_status>open</wp:ping_status>
+<wp:post_name>2049</wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta>
+<wp:meta_key>_edit_lock</wp:meta_key>
+<wp:meta_value>1268897416</wp:meta_value>
+</wp:postmeta>
+<wp:postmeta>
+<wp:meta_key>_edit_last</wp:meta_key>
+<wp:meta_value>1</wp:meta_value>
+</wp:postmeta>
+<wp:comment>
+<wp:comment_id>18060</wp:comment_id>
+<wp:comment_author><![CDATA[Mars]]></wp:comment_author>
+<wp:comment_author_email>marsonearth@gmail.com</wp:comment_author_email>
+<wp:comment_author_url>http://colorsinsidemyworld.wordpress.com</wp:comment_author_url>
+<wp:comment_author_IP>221.120.220.13</wp:comment_author_IP>
+<wp:comment_date>2010-03-19 01:39:34</wp:comment_date>
+<wp:comment_date_gmt>2010-03-19 06:39:34</wp:comment_date_gmt>
+<wp:comment_content><![CDATA[hmm...interesting perspective!
+
+suggested response by Person: *ouch* now that hurts]]></wp:comment_content>
+<wp:comment_approved>1</wp:comment_approved>
+<wp:comment_type></wp:comment_type>
+<wp:comment_parent>0</wp:comment_parent>
+<wp:comment_user_id>0</wp:comment_user_id>
+</wp:comment>
+	</item>
+<item>
+<title>adverts</title>
+<link>http://www.jaaduhai.com/blog/2010/03/18/adverts/</link>
+<pubDate>Thu, 18 Mar 2010 07:30:19 +0000</pubDate>
+<dc:creator><![CDATA[adnan.]]></dc:creator>
+
+		<category><![CDATA[general]]></category>
+
+		<category domain="category" nicename="general"><![CDATA[general]]></category>
+
+<guid isPermaLink="false">http://www.jaaduhai.com/blog/2010/03/18/adverts/</guid>
+<description></description>
+<content:encoded><![CDATA[What would advertising be like if the world were blind?]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>2051</wp:post_id>
+<wp:post_date>2010-03-18 02:30:19</wp:post_date>
+<wp:post_date_gmt>2010-03-18 07:30:19</wp:post_date_gmt>
+<wp:comment_status>open</wp:comment_status>
+<wp:ping_status>open</wp:ping_status>
+<wp:post_name>adverts</wp:post_name>
+<wp:status>publish</wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type>post</wp:post_type>
+<wp:post_password></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta>
+<wp:meta_key>_edit_lock</wp:meta_key>
+<wp:meta_value>1268897420</wp:meta_value>
+</wp:postmeta>
+<wp:postmeta>
+<wp:meta_key>_edit_last</wp:meta_key>
+<wp:meta_value>1</wp:meta_value>
+</wp:postmeta>
 	</item>
 </channel>
 </rss>
