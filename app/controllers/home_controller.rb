@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
+
   def index
     params[:page] = 1 if (params[:page].blank?)
     options = {
@@ -31,5 +32,12 @@ class HomeController < ApplicationController
     }
 
     @posts = Post.paginate(options)
+
+    request.format = :rss
+    respond_to do |with|
+      with.rss
+      with.html
+    end
   end
+
 end
