@@ -10,9 +10,10 @@ Blog::Application.routes.draw do |map|
   match '/logout' => 'sessions#destroy', :as => :logout
 
   root :to => "home#index"
-  match 'feed' => 'home#feed', :as => "feed", :format => "atom"
+  get 'feed' => 'home#feed', :as => "feed"
   match 'page/:page' => 'home#index', :page => /\d+/, :as => "page"
   match 'categories/:category(/page/:page)' => 'home#index', :page => /\d+/, :as => "category"
+  get '/:post_type/:slug/feed' => 'home#comment_feed', :as => "comment_feed"
   match '/:post_type/:slug' => 'home#content', :as => "content"
 
   # The priority is based upon order of creation:
