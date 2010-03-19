@@ -10,7 +10,7 @@ require BOOT_PATH
 require ENV_PATH
 require APP_PATH
 
-file = ROOT_PATH + "/db/wordpress.2010-03-17.xml"
+file = ROOT_PATH + "/db/wordpress.2010-03-19.xml"
 
 user = User.first(:name => "adnan.")
 
