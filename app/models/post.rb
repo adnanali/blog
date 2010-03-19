@@ -30,4 +30,18 @@ class Post
 
   belongs_to :user
   many :comments, :class_name => "Comment"
+
+  before_validation :make_slug
+
+  def make_slug
+    return if not slug.blank?
+    Rails.logger.info "make_slug: slug is not blank: #{slug}"
+    if title.blank?
+      slug = id
+      Rails.logger.info "make_slug: title is blank #{slug}"
+      return
+    end
+    self.slug = title.downcase.gsub(/[^a-z0-9]/,'-').squeeze('-').gsub(/^\-|\-$/,'')
+    Rails.logger.info "make_slug: title is blank #{slug}"
+  end
 end
