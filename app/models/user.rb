@@ -22,7 +22,7 @@ class User
   key :display_name, String, :required => true
   key :email, String
   key :url, String
-  key :open_id, String, :required => true
+  key :open_id, String, :required => true, :unique => true
 
   has_many :posts, :class_name => "Post"
 end

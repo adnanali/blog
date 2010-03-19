@@ -20,4 +20,23 @@ class ApplicationController < ActionController::Base
 	  end
     true
   end
+
+  private
+
+  def current_user
+    @current_user ||= User.find(session[:user_id])
+  end
+
+  def admin?
+    return false if not session[:user_id]
+    current_user.user_type == "admin"
+  end
+
+  def needs_admin
+    if not admin?
+      Rails.logger.info current_user.inspect
+      redirect_to root_url, :notice => "you can't access that ish!"
+    end
+    true
+  end
 end

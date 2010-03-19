@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_filter :needs_admin
   # GET /posts
   # GET /posts.xml
   def index
