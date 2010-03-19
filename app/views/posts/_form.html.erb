@@ -17,6 +17,10 @@
     <%= f.label :categories %><br />
     <%= f.text_field :categories, :value => @post.categories.join(",") %>
   </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.select :status, Post.collection.distinct(:status) %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
