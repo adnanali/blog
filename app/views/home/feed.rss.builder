@@ -1,9 +1,10 @@
-xml.instruct! :xml, :version => "1.0"
+xml.instruct! :xml, :version => "1.0", :encoding => "UTF-8"
 xml.rss(:version => "2.0", 
         "xmlns:content" => 'http://purl.org/rss/1.0/modules/content/',
         "xmlns:wfw" => "http://wellformedweb.org/CommentAPI/",
         "xmlns:dc" => "http://purl.org/dc/elements/1.1/",
         "xmlns:slash" => "http://purl.org/rss/1.0/modules/slash/",
+        "xmlns:sy" => "http://purl.org/rss/1.0/modules/syndication/",
         "xmlns:atom" => "http://www.w3.org/2005/Atom"
         ) do
   xml.channel do
@@ -13,6 +14,9 @@ xml.rss(:version => "2.0",
     xml.link root_url
     xml.lastBuildDate @posts.first.created_at.to_s(:rfc822)
     xml.language "en"
+
+    xml.sy :updatePeriod, "hourly"
+    xml.sy :updateFrequency, 1
 
     Rails.logger.info "we're in the rss yo!"
 
