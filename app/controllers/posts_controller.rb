@@ -3,7 +3,17 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.xml
   def index
-    @posts = Post.all(:order => "publish_date DESC")
+
+    params[:page] = 1 if (params[:page].blank?)
+    options = {
+            :page => params[:page],
+            :per_page => 30,
+            :order => "publish_date DESC"
+            }
+    options[:categories] = params[:category] if (not params[:category].blank?)
+
+    @posts = Post.paginate(options)
+    #@posts = Post.all(:order => "publish_date DESC")
 
     respond_to do |format|
       format.html # index.html.erb
