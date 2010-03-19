@@ -51,6 +51,7 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.xml
   def create
+    params[:post][:categories] = params[:post][:categories].split(",")
     @post = Post.new(params[:post])
 
     respond_to do |format|
@@ -67,6 +68,7 @@ class PostsController < ApplicationController
   # PUT /posts/1
   # PUT /posts/1.xml
   def update
+    params[:post][:categories] = params[:post][:categories].split(",")
     @post = Post.find(params[:id])
 
     respond_to do |format|
