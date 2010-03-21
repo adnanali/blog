@@ -11,6 +11,7 @@ Blog::Application.routes.draw do |map|
   match '/archives' => 'home#archives', :as => :archives
 
   match "blog/page/:page" => redirect("/page/%{page}")
+  match "blog/feed" => redirect("/feed")
   match "blog/" => redirect("/")
   match "blog/:y/:m/:d/:slug" => redirect("/post/%{slug}"), :y => /\d\d\d\d/, :m => /\d\d/, :d => /\d\d/
   match "blog/:y/:m/:d" => redirect("/archives"), :y => /\d\d\d\d/, :m => /\d\d/, :d => /\d\d/
