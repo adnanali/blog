@@ -8,6 +8,14 @@ Blog::Application.routes.draw do |map|
   end
   match '/login' => 'sessions#new', :as => :login
   match '/logout' => 'sessions#destroy', :as => :logout
+  match '/archives' => 'home#archives', :as => :archives
+
+  match "blog/page/:page" => redirect("/page/%{page}")
+  match "blog/" => redirect("/")
+  match "blog/:y/:m/:d/:slug" => redirect("/post/%{slug}"), :y => /\d\d\d\d/, :m => /\d\d/, :d => /\d\d/
+  match "blog/:y/:m/:d" => redirect("/archives"), :y => /\d\d\d\d/, :m => /\d\d/, :d => /\d\d/
+  match "blog/:y/:m" => redirect("/archives"), :y => /\d\d\d\d/, :m => /\d\d/
+  match "blog/:y" => redirect("/archives"), :y => /\d\d\d\d/
 
   root :to => "home#index"
   get 'feed' => 'home#feed', :as => "feed"

@@ -40,4 +40,7 @@ class HomeController < ApplicationController
     end
   end
 
+  def archives
+  end
+
 end
