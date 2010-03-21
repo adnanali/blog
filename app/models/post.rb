@@ -26,12 +26,18 @@ class Post
   key :publish_date, Time
   key :tags, Array
   key :categories, Array
-  key :comment_count, Integer
+  key :comment_count, Integer, :default => 0
 
   belongs_to :user
   many :comments, :class_name => "Comment"
 
-  before_validation :make_slug
+  before_validation :make_slug, :set_publish
+
+  def set_publish
+    if status == "publish" and publish_date.blank?
+      self.publish_date = Time.now
+    end  
+  end
 
   def make_slug
     return if not slug.blank?
