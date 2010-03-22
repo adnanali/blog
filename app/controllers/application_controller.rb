@@ -23,6 +23,10 @@ class ApplicationController < ActionController::Base
 
   private
 
+  def logged_in?
+    return not session[:user_id].blank?
+  end
+
   def current_user
     @current_user ||= User.find(session[:user_id])
   end
