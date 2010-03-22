@@ -3,6 +3,8 @@ Blog::Application.routes.draw do |map|
   resources :users
   resources :comments
 
+  match '/posts/:post_id/comments' => 'comments#list', :as => :post_comments
+
   scope '/session' do
     post '' => "sessions#create"
     get '/complete' => "sessions#complete", :as => "complete_session"

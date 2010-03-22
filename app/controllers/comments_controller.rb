@@ -47,7 +47,7 @@ class CommentsController < ApplicationController
 
     respond_to do |format|
       if @comment.save
-        format.js { render :json => "success" }
+        format.js { render :text => @comment.id }
       else
         format.js { render :json => @comment.errors, :status => :unprocessable_entity }
       end
@@ -81,5 +81,9 @@ class CommentsController < ApplicationController
       format.html { redirect_to(comments_url) }
       format.xml  { head :ok }
     end
+  end
+
+  def list
+    @post = Post.find(params[:post_id])
   end
 end

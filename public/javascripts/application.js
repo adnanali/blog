@@ -5,16 +5,6 @@ $(".new_comment").live("ajax:loading", function(xhr) {
   $(this).find(".field_error").removeClass("field_error");
 });
 
-$(".new_comment").live("ajax:success", function(data, status, xhr) {
-  console.log("success!!!")
-  console.log(data);
-  console.log(status);
-  console.log(xhr);
-
-  // empty the comment list
-  $("#comment_list").empty();
-
-});
 
 $(".new_comment").live("ajax:failure", function(xhr, status, error) {
   var prefix = xhr.target.id;
@@ -33,3 +23,17 @@ $(".new_comment").live("ajax:failure", function(xhr, status, error) {
 $(".new_comment").live("ajax:after", function(xhr) {
 
 });
+
+$.fn.clearForm = function() {
+  return this.each(function() {
+ var type = this.type, tag = this.tagName.toLowerCase();
+ if (tag == 'form')
+   return $(':input',this).clearForm();
+ if (type == 'text' || type == 'password' || tag == 'textarea')
+   this.value = '';
+ else if (type == 'checkbox' || type == 'radio')
+   this.checked = false;
+ else if (tag == 'select')
+   this.selectedIndex = -1;
+  });
+};

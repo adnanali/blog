@@ -36,6 +36,18 @@
     </div>
     <%= hidden_field_tag "comment[post_id]", @post.id %>
   <% end %>
+  <script type="text/javascript">
+    $(".new_comment").live("ajax:success", function(data, status, xhr) {
+
+      $(this).clearForm();
+      // empty the comment list
+      $.get('<%= post_comments_path(@post.id) %>', function (data) {
+        $("#comment_list").html(data);
+        $("#comment-" + status).scrollTo();
+      });
+
+    });
+  </script>
   &nbsp;
   <div class="clear">&nbsp;</div>
   <br class="clear"/>&nbsp;
