@@ -24,7 +24,7 @@ class ApplicationController < ActionController::Base
   private
 
   def logged_in?
-    return not session[:user_id].blank?
+    return !session[:user_id].blank?
   end
 
   def current_user

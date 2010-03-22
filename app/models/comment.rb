@@ -2,6 +2,7 @@ class Comment
   include MongoMapper::Document 
 
   before_create :check_for_spam
+  after_save :update_count
 
   timestamps!
   
@@ -40,7 +41,7 @@ class Comment
   end
 
   def check_for_spam
-    self.approved = Akismetor.spam?(akismet_attributes) ? "yes" : "spam"
+    self.approved = Akismetor.spam?(akismet_attributes) ? "spam" : "yes"
     true
   end
 
@@ -65,5 +66,9 @@ class Comment
   def mark_as_ham!
     update_attributes({:approved => "yes"})
     Akismetor.submit_ham(akismet_attributes)
+  end
+
+  def update_count
+    post.update_attributes({:comment_count => post.approved_comments.count })  
   end
 end
