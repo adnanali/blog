@@ -14,7 +14,7 @@
   <tr>
     <td><%= link_to post.title.empty? ? "(empty)" : post.title, edit_post_path(post) %></td>
     <td><%= post.categories.inspect %></td>
-    <td><%= post.status %></td>
+    <td><%= link_to_if(post.status == "draft", post.status, preview_post_path(post.id))%></td>
     <td><%= post.publish_date %></td>
     <td><%= link_to 'Show', post %></td>
     <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>

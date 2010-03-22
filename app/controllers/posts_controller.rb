@@ -8,9 +8,10 @@ class PostsController < ApplicationController
     options = {
             :page => params[:page],
             :per_page => 30,
-            :order => "publish_date DESC"
+            :order => "updated_at DESC"
             }
     options[:categories] = params[:category] if (not params[:category].blank?)
+    options[:status] = params[:status] if (not params[:status].blank?)
 
     @posts = Post.paginate(options)
     #@posts = Post.all(:order => "publish_date DESC")

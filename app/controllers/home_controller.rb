@@ -43,4 +43,10 @@ class HomeController < ApplicationController
   def archives
   end
 
+  def preview
+    @post = Post.first(:id => params[:post_id]) or raise Error404
+    Time.zone = 'Eastern Time (US & Canada)'
+    render 'content'
+  end
+
 end

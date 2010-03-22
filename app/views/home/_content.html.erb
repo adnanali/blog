@@ -5,7 +5,8 @@
   <div class="meta">
     <div class="date">
       <h3>
-        <%= post.publish_date.strftime("#{post.publish_date.day.ordinalize} %B %Y") %>
+        <% date = post.publish_date || post.created_at %>
+        <%= date.strftime("#{date.day.ordinalize} %B %Y") %>
       </h3>
       Categories:<br/>
       <% post.categories.each do |category| %>

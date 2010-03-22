@@ -123,7 +123,7 @@ class SessionsController < ApplicationController
         # first let's see if the user is created already
 
         openid_identity = params[:openid1_claimed_id] || params['openid.identity']
-        @user = User.find(:open_id => openid_identity)
+        @user = User.first(:open_id => openid_identity)
 
         logger.info "USER: #{params.inspect}"
         logger.info "USER: #{@user.inspect}"
