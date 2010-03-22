@@ -1,6 +1,7 @@
 Blog::Application.routes.draw do |map|
   resources :posts
   resources :users
+  resources :comments
 
   scope '/session' do
     post '' => "sessions#create"

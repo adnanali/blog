@@ -1,0 +1,22 @@
+<% comments.each do |comment| %>
+  <div class="meta">
+    <div class="date"><h3><%= link_to comment.created_at.strftime("#{comment.created_at.day.ordinalize} %B %Y"), content_url(comment.post.post_type, comment.post.slug) + "/#comment-#{comment.id}" %></h3></div>
+    <br/>
+
+    <%#
+    <p>
+      <a class="post-edit-link" href="http://www.jaaduhai.com/blog/wp-admin/post.php?action=edit&amp;post=272" title="Edit post">Edit</a>
+    </p>
+    %>
+  </div>
+  <div class="content" id="comment-<%= comment.id %>">
+    <%#
+      <img alt='' src='http://www.gravatar.com/avatar/34d8a3a56447b51adcfd39b777818f37?s=50&amp;d=http%3A%2F%2Fwww.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G' class='avatar avatar-50 photo' height='50' width='50'/>
+    %>
+
+    <%= raw markdown gfm comment.body %>
+
+    <div class="author"><%= link_to_if(!comment.url.blank?,  comment.author, comment.url) %></div>
+  </div>
+  <br class="clear"/>
+<% end %>

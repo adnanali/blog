@@ -147,3 +147,16 @@ div#tagline {margin: -2em 27.5em 0; }
   margin: 0 auto;
   margin-bottom: 2em;
 }
+
+.new_comment {
+  position:relative;
+  float:left;
+}
+
+.new_comment input {
+  margin-top: 15px;
+}
+
+.field_error input, .field_error textarea {
+  border-color: red;
+}

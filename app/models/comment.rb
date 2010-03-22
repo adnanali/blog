@@ -16,15 +16,15 @@ class Comment
   # after_create :your_model_method
   # before_upate :your_model_method
 
-  key :post_id, ObjectId
+  key :post_id, ObjectId, :required => true
   key :user_id, ObjectId
-  key :author, String
-  key :email, String
+  key :author, String, :required => true
+  key :email, String, :required => true
   key :url, String
   key :ip, String
   key :approved, String
   key :comment_user_id, String
-  key :body, String
+  key :body, String, :required => true
 
   belongs_to :post, :class_name => "Post"
   belongs_to :user, :class_name => "User"

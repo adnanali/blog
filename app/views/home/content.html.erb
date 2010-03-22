@@ -5,64 +5,40 @@
   <div class="title"><h2>Comments</h2></div>
   <br/><br/>
 
-  <% @post.comments.each do |comment| %>
-    <div class="meta">
-      <div class="date"><h3><%= link_to comment.created_at.strftime("#{comment.created_at.day.ordinalize} %B %Y"), content_url(@post.post_type, @post.slug) + "/#comment-#{comment.id}" %></h3></div>
-      <br/>
+  <div id="comment_list">
+    <%= render :partial => "comments", :locals => { :comments => @post.comments } %>
+  </div>
 
-      <%#
-    <p>
-      <a class="post-edit-link" href="http://www.jaaduhai.com/blog/wp-admin/post.php?action=edit&amp;post=272" title="Edit post">Edit</a>
-    </p>
-      %>
-    </div>
-    <div class="content" id="comment-<%= comment.id %>">
-      <%#
-      <img alt='' src='http://www.gravatar.com/avatar/34d8a3a56447b51adcfd39b777818f37?s=50&amp;d=http%3A%2F%2Fwww.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G' class='avatar avatar-50 photo' height='50' width='50'/>
-      %>
-
-      <%= raw markdown gfm comment.body %>
-
-      <div class="author"><%= link_to_if(!comment.url.blank?,  comment.author, comment.url) %></div>
-    </div>
-    <br class="clear"/>
-  <% end %>
-
-  <%#
   <div class="meta">
     <div class="date"><h3>Your Comment</h3></div>
     <br/>
 
     <p>
-      <a class="post-edit-link" href="http://www.jaaduhai.com/blog/wp-admin/post.php?action=edit&amp;post=272" title="Edit post">Edit</a>
     </p></div>
-  <form style="position:relative;float:left;" action="http://www.jaaduhai.com/blog/wp-comments-post.php" method="post" onsubmit="return validate(this)" id="respond" name="blah">Logged
-    in as <a href="http://www.jaaduhai.com/blog/wp-admin/profile.php">adnan.</a>.
-    <p><textarea name="comment" id="comment" cols="71" rows="10" tabindex="5"></textarea>
-
-    <p><input name="submit" type="submit" id="submit" tabindex="6" value="Submit Comment"/></p>
-    <input type="hidden" name="comment_post_ID" value="272"/></form>
+  <% form_for(Comment.new, :remote => true, :style => "position:relative;float:left") do |f| %>
+    <div class="field">
+      <%= f.text_field :author %>
+      <%= f.label "Name" %>
+    </div>
+    <div class="field">
+      <%= f.text_field :email %>
+      <%= f.label "Email" %>
+    </div>
+    <div class="field">
+      <%= f.text_field :url %>
+      <%= f.label "Site" %>
+    </div>
+    <div class="field">
+      <%= f.text_area :body, :cols =>71, :rows => 10 %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Submit Comment" %>
+    </div>
+    <%= hidden_field_tag "comment[post_id]", @post.id %>
+  <% end %>
   &nbsp;
   <div class="clear">&nbsp;</div>
   <br class="clear"/>&nbsp;
-  <script type="text/javascript">
-    function validate(form) {
-      if (form.author.value == '') {
-        alert("What about putting some name down?");
-        return false;
-      }
-      if (form.email.value == '') {
-        alert("Your email is missing");
-        return false;
-      }
-      //if (form.McReinhard.value != '?') { alert("Please write a questionmark so I know you are human"); return false; }
-      else {
-        form.submit();
-        return true;
-      }
-    }
-  </script>
-  %>
 
 </div>
 <br class="break"/>
