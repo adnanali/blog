@@ -40,15 +40,23 @@ class Post
   end
 
   def make_slug
-    return if not slug.blank?
-    Rails.logger.info "make_slug: slug is not blank: #{slug}"
-    if title.blank?
+    if self.title.blank? and !self.slug.blank?
       slug = id
-      Rails.logger.info "make_slug: title is blank #{slug}"
       return
     end
-    self.slug = title.downcase.gsub(/[^a-z0-9]/,'-').squeeze('-').gsub(/^\-|\-$/,'')
-    Rails.logger.info "make_slug: title is blank #{slug}"
+    slug_start = self.slug.blank? ? self.title : self.slug
+    suggested_slug = slug_attempt = slug_start.downcase.gsub(/[^a-z0-9]/,'-').squeeze('-').gsub(/^\-|\-$/,'')
+
+    count = 1
+    slug_unique = false
+    while !slug_unique do
+      slug_attempt = "#{suggested_slug}-#{count}" if count > 1
+      slug_post = Post.first(:post_type => post_type, :slug => slug_attempt)
+      slug_unique = slug_post == nil ? true : slug_post.id == id
+      count += 1
+    end
+
+    self.slug = slug_attempt
   end
 
   def approved_comments
