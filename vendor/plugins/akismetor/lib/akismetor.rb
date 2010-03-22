@@ -12,7 +12,11 @@ class Akismetor
   # Does a comment-check on Akismet with the submitted hash.
   # Returns true or false depending on response.
   def self.spam?(attributes)
-    self.new(attributes).execute('comment-check') != "false"
+    result = self.new(attributes).execute('comment-check')
+    Rails.logger.info("Akisment spam?")
+    Rails.logger.info attributes.inspect
+    Rails.logger.info result
+    result != "false"
   end
 
   # Does a submit-spam on Akismet with the submitted hash.

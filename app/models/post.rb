@@ -50,4 +50,8 @@ class Post
     self.slug = title.downcase.gsub(/[^a-z0-9]/,'-').squeeze('-').gsub(/^\-|\-$/,'')
     Rails.logger.info "make_slug: title is blank #{slug}"
   end
+
+  def approved_comments
+    comments.all(:approved => "yes", :order => "created_at") || []
+  end
 end

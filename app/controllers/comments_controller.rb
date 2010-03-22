@@ -43,6 +43,7 @@ class CommentsController < ApplicationController
   def create
     @post = Post.find(params[:comment][:post_id]) 
     @comment = Comment.new(params[:comment])
+    @comment.request = request
     #@comment.post = post
 
     respond_to do |format|
@@ -85,5 +86,6 @@ class CommentsController < ApplicationController
 
   def list
     @post = Post.find(params[:post_id])
+    @comments = @post.approved_comments
   end
 end

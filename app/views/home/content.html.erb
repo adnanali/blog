@@ -6,7 +6,7 @@
   <br/><br/>
 
   <div id="comment_list">
-    <%= render :partial => "comments", :locals => { :comments => @post.comments } %>
+    <%= render :partial => "comments", :locals => { :comments => @post.approved_comments } %>
   </div>
 
   <div class="meta">
