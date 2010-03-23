@@ -1,0 +1,40 @@
+<h1>Listing comments</h1>
+
+<table>
+  <tr>
+    <th>Post</th>
+    <th>Author</th>
+    <th>Email</th>
+    <th>Url</th>
+    <th>Approved</th>
+    <th>IP</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @comments.each do |comment| %>
+  <tr>
+    <td><%#= link_to comment.post.title.blank? ? "(empty)" : comment.post.title, edit_post_path(comment.post) %></td>
+    <td><%= comment.author %></td>
+    <td><%= comment.email %></td>
+    <td><%= comment.url %></td>
+    <td><%= link_to comment.approved, edit_comment_path(comment) %></td>
+    <td><%= comment.ip %></td>
+    <td><%= link_to 'Show', comment %></td>
+    <td><%= link_to 'Destroy', comment, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+  <%
+     prev_page = params[:page].to_i + 1
+     next_page = params[:page].to_i - 1
+  %>
+  <% if @comments.total_pages >= prev_page %>
+    <div class="older"><%= link_to "< Older Entries", comments_url(:page => prev_page) %></div>
+  <% end %>
+  <% if next_page != 0 %>
+    <div class="newer"><%= link_to "Newer Entries >", comments_url(:page => next_page) %></div>
+  <% end %>

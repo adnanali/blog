@@ -1,15 +1,24 @@
 class CommentsController < ApplicationController
+  layout "admin"
+  before_filter :needs_admin, :except => [:create]
   # GET /comments
   # GET /comments.xml
-#  def index
-#
-#    @comments = Comment.all(:order => "publish_date DESC")
-#
-#    respond_to do |format|
-#      format.html # index.html.erb
-#      format.xml  { render :xml => @comments }
-#    end
-#  end
+  def index
+    params[:page] = 1 if (params[:page].blank?)
+    options = {
+            :page => params[:page],
+            :per_page => 30,
+            :order => "updated_at DESC"
+            }
+    options[:approved] = params[:approved] if (not params[:approved].blank?)
+
+    @comments = Comment.paginate(options)
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @comments }
+    end
+  end
 
   # GET /comments/1
   # GET /comments/1.xml
@@ -34,9 +43,9 @@ class CommentsController < ApplicationController
 #  end
 
   # GET /comments/1/edit
-#  def edit
-#    @comment = Comment.find(params[:id])
-#  end
+  def edit
+    @comment = Comment.find(params[:id])
+  end
 
   # POST /comments
   # POST /comments.xml
