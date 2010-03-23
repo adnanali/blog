@@ -1,0 +1,52 @@
+#!/usr/bin/env ruby
+# This command will automatically be run when you run "rails" with Rails 3 gems installed from the root of your application.
+
+ENV["RAILS_ENV"] = "production"
+
+ENV_PATH  = File.expand_path('../../config/environment', __FILE__)
+BOOT_PATH = File.expand_path('../../config/boot', __FILE__)
+APP_PATH  = File.expand_path('../../config/application', __FILE__)
+ROOT_PATH = File.expand_path('../..', __FILE__)
+
+require BOOT_PATH
+require ENV_PATH
+require APP_PATH
+
+user = User.first(:name => "adnan.")
+
+comments = Comment.all(:user_id.ne => nil)
+
+puts comments.count
+
+comments.each do |c|
+  c.user_id = nil
+  c.save
+end
+
+comments = Comment.all(:author => /^[aA]dnan\./, :user_id => nil)
+
+puts comments.count
+
+comments.each do |c|
+  c.user = user
+  c.save
+end
+
+comments = Comment.all(:email => /^[aA]dnan/, :url => /jaaduhai|adnanali\.net/, :user_id => nil)
+puts comments.count
+
+comments.each do |c|
+  c.user = user
+  c.save
+end
+
+comments = Comment.all(:email => /^[aA]dnan/, :user_id => nil)
+puts comments.count
+
+comments.each do |c|
+  puts c.author
+  puts c.email
+  puts c.url
+#c.user = user
+#c.save
+end
