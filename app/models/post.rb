@@ -40,8 +40,8 @@ class Post
   end
 
   def make_slug
-    if self.title.blank? and !self.slug.blank?
-      slug = id
+    if self.title.blank? and self.slug.blank?
+      self.slug = id
       return
     end
     slug_start = self.slug.blank? ? self.title : self.slug
