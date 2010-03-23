@@ -33,7 +33,7 @@ class ApplicationController < ActionController::Base
   end
 
   def admin?
-    return false if not session[:user_id]
+    return false if not logged_in?
     current_user.user_type == "admin"
   end
 

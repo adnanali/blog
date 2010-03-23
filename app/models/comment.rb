@@ -69,6 +69,8 @@ class Comment
   end
 
   def update_count
-    post.update_attributes({:comment_count => post.approved_comments.count })  
+    comments = post.approved_comments
+    count = comments == nil ? 0 : comments.count 
+    post.update_attributes({:comment_count => count })  
   end
 end
