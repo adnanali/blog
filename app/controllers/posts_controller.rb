@@ -55,6 +55,7 @@ class PostsController < ApplicationController
   def create
     params[:post][:categories] = params[:post][:categories].split(",")
     @post = Post.new(params[:post])
+    @post.user = current_user
 
     respond_to do |format|
       if @post.save

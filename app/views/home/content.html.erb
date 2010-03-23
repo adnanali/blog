@@ -16,6 +16,9 @@
     <p>
     </p></div>
   <% form_for(Comment.new, :remote => true, :style => "position:relative;float:left") do |f| %>
+    <% if logged_in? %>
+      <p>You are logged in as '<%= current_user.name %>'</p>
+    <% else %>
     <div class="field">
       <%= f.text_field :author %>
       <%= f.label "Name" %>
@@ -28,6 +31,7 @@
       <%= f.text_field :url %>
       <%= f.label "Site" %>
     </div>
+    <% end %>
     <div class="field">
       <%= f.text_area :body, :cols =>71, :rows => 10 %>
     </div>

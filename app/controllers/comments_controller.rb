@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  layout "admin"
+  layout "admin", :except => [:list]
   before_filter :needs_admin, :except => [:create]
   # GET /comments
   # GET /comments.xml
@@ -53,6 +53,13 @@ class CommentsController < ApplicationController
     @post = Post.find(params[:comment][:post_id]) 
     @comment = Comment.new(params[:comment])
     @comment.request = request
+
+    if logged_in?
+      @comment.user = current_user
+      @comment.author = current_user.name
+      @comment.email = current_user.email
+      @comment.url = current_user.url
+    end
     #@comment.post = post
 
     respond_to do |format|

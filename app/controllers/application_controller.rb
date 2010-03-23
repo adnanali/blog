@@ -23,15 +23,18 @@ class ApplicationController < ActionController::Base
 
   private
 
+  helper_method :logged_in?
   def logged_in?
     return !session[:user_id].blank?
   end
 
+  helper_method :current_user
   def current_user
     Rails.logger.info "getting current user with #{session[:user_id]}"
     @current_user ||= User.first(:id => session[:user_id])
   end
 
+  helper_method :admin?
   def admin?
     return false if not logged_in?
     current_user.user_type == "admin"
