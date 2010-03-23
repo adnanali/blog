@@ -4,3 +4,4 @@ db/cstore/*
 log/*.log
 tmp/**/*
 .idea/workspace.xml
+*.swp
