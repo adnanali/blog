@@ -22,7 +22,7 @@ Tags: minimalism, minimal, fixed width, one column, simple
 
 /* Basic Stuff */
 html { background-color: #27221A;}
-body 						{ font-family: 'bitstream vera sans', trebuchet, 'Lucida Grande', Verdana, Arial, Sans-Serif; color: #dadada; background: #27221A url(wp-content/themes/ifany/images/bg.gif) repeat scroll 0 0}
+body 						{ font-family: 'bitstream vera sans', trebuchet, 'Lucida Grande', Verdana, Arial, Sans-Serif; color: #dadada; background: #27221A  /* url(wp-content/themes/ifany/images/bg.gif) repeat scroll 0 0 */ ;}
 br.clear					{ clear:both; }
 a:link						{ color:#4DB0CF;}
 a:visited					{ color:#4DB0CF;}
@@ -85,6 +85,7 @@ div.meta a:hover 			{ color:#4DB0CF; }
 div.content					{ width:600px;position:relative;float:left;text-align:justify;line-height:1.5;margin-bottom:4em;font-size:110%;}
 div.post {font-size: 100%;}
 div.content img				{ border-width:1px;border-color:#444;border-style:solid;padding:2px;background-color:#eee;margin-bottom:1em; }
+div.content img.photo				{ border-width:3px;border-color:#767676; border-style:solid;padding:2px;background-color:black;margin-bottom:1em; }
 div.author					{ text-align:right;font-size:80%; }
 div.author a:link			{ color:#767676; }
 div.author a:visited		{ color:#767676; }
