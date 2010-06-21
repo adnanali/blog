@@ -74,7 +74,6 @@ class CommentsController < ApplicationController
   # PUT /comments/1
   # PUT /comments/1.xml
   def update
-    params[:comment][:categories] = params[:comment][:categories].split(",")
     @comment = Comment.find(params[:id])
 
     respond_to do |format|

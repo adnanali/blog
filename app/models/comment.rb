@@ -34,6 +34,13 @@ class Comment
   belongs_to :post, :class_name => "Post"
   belongs_to :user, :class_name => "User"
 
+  def display_url
+    if !url.blank? and url !~ /^http/
+      return "http://#{self.url}"
+    end
+    return url
+  end
+
   def request=(request)
     self.ip = request.remote_ip
     self.referrer = request.env['HTTP_REFERER']

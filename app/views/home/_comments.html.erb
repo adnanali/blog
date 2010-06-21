@@ -16,7 +16,7 @@
 
     <%= raw markdown gfm comment.body %>
 
-    <div class="author"><%= link_to_if(!comment.url.blank?,  comment.author, comment.url) %></div>
+    <div class="author"><%= link_to_if(!comment.display_url.blank?,  comment.author, comment.display_url) %></div>
   </div>
   <br class="clear"/>
 <% end %>

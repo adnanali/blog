@@ -8,6 +8,8 @@
         <% date = post.publish_date || post.created_at %>
         <%= date.strftime("#{date.day.ordinalize} %B %Y") %>
       </h3>
+    </div>
+    <div>
       Categories:<br/>
       <% post.categories.each do |category| %>
        &nbsp;&nbsp;<%= link_to category, category_url(category), :class => "category" %>
@@ -15,6 +17,11 @@
       <% end %>
       <br/>
     </div>
+    <% if admin? %>
+    <div>
+      <%= link_to "Edit", edit_post_path(post) %>
+    </div>
+    <% end %>
   </div>
   <div class="content">
     <div class="post">
